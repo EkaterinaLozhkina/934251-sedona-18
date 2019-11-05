@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Katerina Lozhkina](https://up.htmlacademy.ru/adaptive/18/user/934251).
-* Наставник: `Неизвестно`.
+* Наставник: [Артур Трифонов](https://up.htmlacademy.ru/adaptive/18/user/20140).
 
 ---
 
