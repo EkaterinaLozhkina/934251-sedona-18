@@ -7,20 +7,19 @@
   <body>
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="page-header__logo-img" src="https://via.placeholder.com/150x150" alt="Sedona">
+        <img class="page-header__logo-img" src="https://via.placeholder.com/102x83" alt="Sedona">
       </a>
+      <button class="page-header__toggle age-header__toggle--burger" type="button">Открыть меню</button>
 
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <button class="main-nav__toggle--close" type="button">Закрыть меню</button>
-
         <div class="main-nav__wrapper">
+          <button class="main-nav__toggle main-nav__toggle--close" type="button">Закрыть меню</button>
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
-            </li>
             <li class="site-list__item">
-              <a href="photo.html">Фото и видео</a>
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a>Фото и видео</a>
             </li>
             <li class="site-list__item">
               <a href="form.html">Форма отзыва</a>
@@ -33,60 +32,68 @@
       </nav>
     </header>
 
-    <!-- Нужно ли поменять класс на page-photo? Или пока так оставить? -->
     <main class="page-main">
-
-      <!-- Может этот блок промо вообще правильней сделать aside и вынести из main? По макету он тянется на всю ширину, а у главного содержимого есть отступы. Для хедера он тоже не очень подходит, ибо разный на главной и внутренних страницах -->
-      <section class="inner-promo">
-        <h2 class="visually-hidden">Промо-блок</h2>
-        <img class="inner-promo__img" src="https://via.placeholder.com/150x150" alt="Sedona photo">
-      </section>
-
       <h1 class="page-main__title">Фото и видео</h1>
       <p class="page-main__text">
         Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
       </p>
 
       <section class="photo-gallery">
-        <div class="photo-gallery__wrapper">
-          <h2 class="visually-hidden">Фотогалерея</h2>
-          <div class="photo-gallery__item">
-            <img class="photo-gallery__img" src="https://via.placeholder.com/150x150" alt="Sedona road">
+        <h2 class="visually-hidden">Фотогалерея</h2>
+        <ul class="photo-gallery__list">
+          <li class="photo-gallery__item">
+            <a href="#">
+              <img class="photo-gallery__img" src="https://via.placeholder.com/280x280" alt="Sedona road">
+            </a>
             <h3 class="photo-gallery__title">Неродные просторы</h3>
             <p class="photo-gallery__autor">Автор фото: <cite class="photo-gallery__autor-name">Борис</cite></p>
 
-            <!-- А вот тут я в принципе не знаю как сделать -->
-            <button class="photo-gallery__button">Мне нравится</button>
-            <input type="text" name="like-sum" value="0" readonly>
-          </div>
-          <div class="photo-gallery__item">
-            <img class="photo-gallery__img" src="https://via.placeholder.com/150x150" alt="Sedona flora">
+            <button class="photo-gallery__button">
+              <img class="photo-gallery__img-like" src="https://via.placeholder.com/23x21" id="img-like">
+              <label class="visually-hidden" for="img-like">Мне нравится</label>
+              <p class="photo-gallery__num-like"></p>
+            </button>
+          </li>
+          <li class="photo-gallery__item">
+            <a href="#">
+              <img class="photo-gallery__img" src="https://via.placeholder.com/280x280" alt="Sedona flora">
+            </a>
             <h3 class="photo-gallery__title">Местная растительность</h3>
             <p class="photo-gallery__autor">Автор фото: <cite class="photo-gallery__autor-name">Сергей</cite></p>
 
-            <!-- А вот тут я в принципе не знаю как сделать -->
-            <button class="photo-gallery__button">Мне нравится</button>
-            <input type="text" name="like-sum" value="0" readonly>
-          </div>
-          <div class="photo-gallery__item">
-            <img class="photo-gallery__img" src="https://via.placeholder.com/150x150" alt="Sedona road">
+            <button class="photo-gallery__button">
+              <img class="photo-gallery__img-like" src="https://via.placeholder.com/23x21" id="img-like">
+              <label class="visually-hidden" for="img-like">Мне нравится</label>
+              <p class="photo-gallery__num-like"></p>
+            </button>
+          </li>
+          <li class="photo-gallery__item">
+            <a href="#">
+              <img class="photo-gallery__img" src="https://via.placeholder.com/280x280" alt="Sedona road">
+            </a>
             <h3 class="photo-gallery__title">Дорога на север</h3>
             <p class="photo-gallery__autor">Автор фото: <cite class="photo-gallery__autor-name">Петр</cite></p>
 
-            <!-- А вот тут я в принципе не знаю как сделать -->
-            <button class="photo-gallery__button">Мне нравится</button>
-            <input type="text" name="like-sum" value="0" readonly>
-          </div>
-          <div class="photo-gallery__item">
-            <img class="photo-gallery__img" src="https://via.placeholder.com/150x150" alt="Sedona Devil's Bridge">
+            <button class="photo-gallery__button">
+              <img class="photo-gallery__img-like" src="https://via.placeholder.com/23x21" id="img-like">
+              <label class="visually-hidden" for="img-like">Мне нравится</label>
+              <p class="photo-gallery__num-like"></p>
+            </button>
+          </li>
+          <li class="photo-gallery__item">
+            <a href="#">
+              <img class="photo-gallery__img" src="https://via.placeholder.com/280x280" alt="Sedona Devil's Bridge">
+            </a>
             <h3 class="photo-gallery__title">Мост дьявола</h3>
             <p class="photo-gallery__autor">Автор фото: <cite class="photo-gallery__autor-name">Антон</cite></p>
 
-            <!-- А вот тут я в принципе не знаю как сделать -->
-            <button class="photo-gallery__button">Мне нравится</button>
-            <input type="text" name="like-sum" value="0" readonly>
-          </div>
-        </div>
+            <button class="photo-gallery__button">
+              <img class="photo-gallery__img-like" src="https://via.placeholder.com/23x21" id="img-like">
+              <label class="visually-hidden" for="img-like">Мне нравится</label>
+              <p class="photo-gallery__num-like"></p>
+            </button>
+          </li>
+        </ul>
       </section>
     </main>
 
