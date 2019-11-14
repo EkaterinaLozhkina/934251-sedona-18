@@ -95,7 +95,15 @@
       <section class="video">
         <h2 class="video__title">Все еще сомневаетесь?</h2>
         <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <video class="video__video-player" poster="https://via.placeholder.com/320x200" width="320" height="200" controls></video>
+        <div class="video__player my-player">
+          <video class="my-player__video" poster="https://via.placeholder.com/320x200" width="320" height="200"></video>
+          <div class="my-player__controls">
+            <input class="my-player__timeset" type="range" name="timeset" min="0" max="235" value="70">
+            <button class="my-player__replay">Воспроизвести заново</button>
+            <button class="my-player__subtitle">Субтитры</button>
+            <button class="my-player__fullscreen">На весь экран</button>
+          </div>
+        </div>
       </section>
     </main>
 
