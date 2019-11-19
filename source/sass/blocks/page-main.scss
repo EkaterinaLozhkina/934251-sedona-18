@@ -1,0 +1,12 @@
+.page-main {
+  width: 320px;
+}
+
+.page-main__description {
+  display: block;
+  margin: 0 32px;
+  margin-top: 44px;
+  padding: 0;
+
+  @include font-size-set(18px, 26px);
+}
