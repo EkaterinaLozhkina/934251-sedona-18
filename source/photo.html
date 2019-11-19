@@ -3,39 +3,46 @@
   <head>
     <meta charset="utf-8">
     <title>Фото и видео</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-img" src="https://via.placeholder.com/102x83" alt="Sedona">
-      </a>
-      <button class="page-header__toggle page-header__toggle--burger" type="button">Открыть меню</button>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <img class="page-header__logo-img" src="https://via.placeholder.com/102x83" alt="Sedona">
+        </a>
+        <button class="page-header__toggle page-header__toggle--burger" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
+      <div class="page-header__bg"></div>
 
       <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <button class="main-nav__toggle main-nav__toggle--close" type="button">Закрыть меню</button>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a>Фото и видео</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Форма отзыва</a>
-            </li>
-            <li class="site-list__item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
+        <button class="main-nav__toggle main-nav__toggle--close" type="button">
+          <span class="visually-hidden">Закрыть меню</span>
+        </button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link button" href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link button">Фото и видео</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link button" href="form.html">Форма отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link button" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
       </nav>
     </header>
 
     <main class="page-main">
       <h1 class="page-main__title">Фото и видео</h1>
       <p class="page-main__text">
-        Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
+        Не можете решиться на путешествие из-за курса?
+        Фотографии помогут вам забыть о политике и экономике.
       </p>
 
       <section class="photo-gallery">
@@ -46,11 +53,13 @@
               <img class="photo-gallery__img" src="https://via.placeholder.com/280x280" alt="Sedona road">
             </a>
             <h3 class="photo-gallery__title">Неродные просторы</h3>
-            <p class="photo-gallery__autor">Автор фото: <cite class="photo-gallery__autor-name">Борис</cite></p>
+            <p class="photo-gallery__autor">Автор фото:
+              <cite class="photo-gallery__autor-name">Борис</cite>
+            </p>
 
             <button class="photo-gallery__button">
               <img class="photo-gallery__img-like" src="https://via.placeholder.com/23x21">
-              <p class="photo-gallery__num-like"></p>
+              <b class="photo-gallery__num-like"></b>
             </button>
           </li>
           <li class="photo-gallery__item">
@@ -58,11 +67,13 @@
               <img class="photo-gallery__img" src="https://via.placeholder.com/280x280" alt="Sedona flora">
             </a>
             <h3 class="photo-gallery__title">Местная растительность</h3>
-            <p class="photo-gallery__autor">Автор фото: <cite class="photo-gallery__autor-name">Сергей</cite></p>
+            <p class="photo-gallery__autor">Автор фото:
+              <cite class="photo-gallery__autor-name">Сергей</cite>
+            </p>
 
             <button class="photo-gallery__button">
               <img class="photo-gallery__img-like" src="https://via.placeholder.com/23x21">
-              <p class="photo-gallery__num-like"></p>
+              <b class="photo-gallery__num-like"></b>
             </button>
           </li>
           <li class="photo-gallery__item">
@@ -70,23 +81,27 @@
               <img class="photo-gallery__img" src="https://via.placeholder.com/280x280" alt="Sedona road">
             </a>
             <h3 class="photo-gallery__title">Дорога на север</h3>
-            <p class="photo-gallery__autor">Автор фото: <cite class="photo-gallery__autor-name">Петр</cite></p>
+            <p class="photo-gallery__autor">Автор фото:
+              <cite class="photo-gallery__autor-name">Петр</cite>
+            </p>
 
             <button class="photo-gallery__button">
               <img class="photo-gallery__img-like" src="https://via.placeholder.com/23x21">
-              <p class="photo-gallery__num-like"></p>
+              <b class="photo-gallery__num-like"></b>
             </button>
           </li>
           <li class="photo-gallery__item">
             <a href="#">
-              <img class="photo-gallery__img" src="https://via.placeholder.com/280x280" alt="Sedona Devil's Bridge">
+              <img class="photo-gallery__img" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Sedona Devil's Bridge">
             </a>
             <h3 class="photo-gallery__title">Мост дьявола</h3>
-            <p class="photo-gallery__autor">Автор фото: <cite class="photo-gallery__autor-name">Антон</cite></p>
+            <p class="photo-gallery__autor">Автор фото:
+              <cite class="photo-gallery__autor-name">Антон</cite>
+            </p>
 
             <button class="photo-gallery__button">
               <img class="photo-gallery__img-like" src="https://via.placeholder.com/23x21">
-              <p class="photo-gallery__num-like"></p>
+              <b class="photo-gallery__num-like"></b>
             </button>
           </li>
         </ul>
@@ -94,42 +109,59 @@
 
       <section class="video">
         <h2 class="video__title">Все еще сомневаетесь?</h2>
-        <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <p class="video__text">
+          Смотрите видеопрезентацию и скорее за билетами,
+          пока они не подорожали в очередной раз!
+        </p>
         <div class="video__player my-player">
           <video class="my-player__video" poster="https://via.placeholder.com/320x200" width="320" height="200"></video>
           <div class="my-player__controls">
             <div class="my-player__progress-bar">
-              <button class="my-player__slider">Ползунок</button>
+              <button class="my-player__slider">
+                <span class="visually-hidden">Ползунок</span>
+              </button>
             </div>
-            <button class="my-player__replay">Воспроизвести заново</button>
-            <button class="my-player__subtitle">Субтитры</button>
-            <button class="my-player__fullscreen">На весь экран</button>
+            <button class="my-player__replay">
+              <span class="visually-hidden">Воспроизвести заново</span>
+            </button>
+            <button class="my-player__subtitle">
+              <span class="visually-hidden">Субтитры</span>
+            </button>
+            <button class="my-player__fullscreen">
+              <span class="visually-hidden">На весь экран</span>
+            </button>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <div class="page-footer__social social">
-          <b class="social__title">#visitsedona</b>
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--twitter" href="twitter.com">twitter</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="facebook.com">facebook</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="youtube.com">youtube</a>
-            </li>
-          </ul>
-        </div>
+      <div class="page-footer__social social">
+        <b class="social__title">#visitsedona</b>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="twitter.com">
+              <span class="visually-hidden">twitter</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="facebook.com">
+              <span class="visually-hidden">facebook</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="youtube.com">
+              <span class="visually-hidden">youtube</span>
+            </a>
+          </li>
+        </ul>
+      </div>
 
-        <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">HTML Academy</span>
+        </a>
       </div>
     </footer>
   </body>
