@@ -1,0 +1,33 @@
+.page-header {
+  width: 320px;
+}
+
+.page-header__wrapper {
+  position: relative;
+  padding: 18px 20px;
+
+  text-align: right;
+  background-color: #ffffff;
+}
+
+.page-header__logo {
+  position: absolute;
+  top: -18px;
+  left: 90px;
+}
+
+.page-header__toggle {
+  position: relative;
+  width: 23px;
+  height: 21px;
+
+  background-color: transparent;
+}
+
+.page-header__bg {
+  height: 390px;
+
+  background-color: #5b7683;
+  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-position: center;
+}
