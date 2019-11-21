@@ -5,6 +5,7 @@
 .features__list {
   display: flex;
   flex-direction: column;
+
   @include clearfix();
   padding: 38px 0;
 

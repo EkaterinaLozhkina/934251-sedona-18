@@ -9,5 +9,6 @@
 
 .social__list {
   display: flex;
+
   @include clearfix();
 }
