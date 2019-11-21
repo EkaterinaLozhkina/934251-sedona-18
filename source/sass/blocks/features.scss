@@ -5,12 +5,10 @@
 .features__list {
   display: flex;
   flex-direction: column;
-  margin: 0;
+  @include clearfix();
   padding: 38px 0;
 
   text-align: left;
-
-  list-style: none;
 }
 
 .features__item {

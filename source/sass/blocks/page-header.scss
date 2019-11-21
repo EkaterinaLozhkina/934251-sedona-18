@@ -4,20 +4,21 @@
 
 .page-header__wrapper {
   position: relative;
-  padding: 18px 20px;
+  padding-top: 58px;
 
-  text-align: right;
-  background-color: #ffffff;
+  box-shadow: -5px -1px 5px 1px rgba(001, 001, 001, 0.2);
 }
 
 .page-header__logo {
   position: absolute;
-  top: -18px;
-  left: 90px;
+  top: 0;
+  left: 108px;
 }
 
 .page-header__toggle {
-  position: relative;
+  position: absolute;
+  top: 20px;
+  right: 20px;
   width: 23px;
   height: 21px;
 
@@ -29,5 +30,11 @@
 
   background-color: #5b7683;
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: center;
+  background-position: top;
+}
+
+.page-header__bg--inner {
+  height: 160px;
+
+  background-position: bottom;
 }

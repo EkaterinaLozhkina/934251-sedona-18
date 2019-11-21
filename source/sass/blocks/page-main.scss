@@ -2,7 +2,16 @@
   width: 320px;
 }
 
-.page-main__description {
+.page-main__title {
+  margin: 0;
+  margin-top: 40px;
+  margin-bottom: 32px;
+  padding: 0;
+
+  @include font-size-set(18px, 26px);
+}
+
+.page-main__text {
   display: block;
   margin: 0 32px;
   margin-top: 44px;
@@ -10,3 +19,12 @@
 
   @include font-size-set(18px, 26px);
 }
+
+.page-main__text--inner {
+  margin: 32px 20px;
+  padding: 0;
+
+  @include font-size-set(14px, 24px);
+}
+
+

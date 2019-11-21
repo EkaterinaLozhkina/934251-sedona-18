@@ -4,7 +4,7 @@
   margin-bottom: 27px;
   padding: 0;
 
-  @include font-size-set();
+  @include font-size-set(14px, 26px);
 
   background-color: #ffffff;
 }
@@ -12,11 +12,9 @@
 .advantages__list {
   display: flex;
   flex-direction: column;
-  margin: 0;
-  padding: 0;
 
   background-color: #eeeeee;
-  list-style: none;
+  @include clearfix();
 }
 
 .advantages__item--photo {
@@ -53,12 +51,4 @@
   display: block;
   width: 320px;
   height: 260px;
-}
-
-.advantages__img--city {
-  background-color: #6e6949;
-}
-
-.advantages__img--bridge {
-  background-color: #7b5e4e;
 }
