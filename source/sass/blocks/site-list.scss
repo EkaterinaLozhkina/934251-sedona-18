@@ -1,6 +1,8 @@
 .site-list {
-  @include clearfix();
-  @include font-size-set(18px, 40px);
+  @include clearlist();
+
+  font-size: 18px;
+  line-height: 40px;
   font-weight: bold;
 }
 

@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
 
-  @include clearfix();
+  @include clearlist();
   box-shadow: inset 1px 0 0 1px #e5e5e5;
 }
 
@@ -27,7 +27,8 @@
   margin-bottom: 7px;
   padding: 0;
 
-  @include font-size-set(14px, 24px);
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .photo-gallery__autor {
@@ -36,7 +37,8 @@
   margin-bottom: 14px;
   padding: 0;
 
-  @include font-size-set(14px, 24px);
+  font-size: 14px;
+  line-height: 24px;
 
   text-transform: none;
 }
@@ -51,20 +53,22 @@
   padding: 0;
 
   background-color: transparent;
-  border: none;
+  border: 0 none transparent;
 }
 
 .photo-gallery__img-like {
   position: absolute;
-
   width: 23px;
   height: 21px;
 
   vertical-align: middle;
+
+  border: 0 none transparent;
 }
 
 .photo-gallery__num-like {
   margin-left: 36px;
 
-  @include font-size-set(14px, 24px);
+  font-size: 14px;
+  line-height: 24px;
 }

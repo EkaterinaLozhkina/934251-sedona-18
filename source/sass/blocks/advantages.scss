@@ -4,7 +4,8 @@
   margin-bottom: 27px;
   padding: 0;
 
-  @include font-size-set(14px, 26px);
+  font-size: 14px;
+  line-height: 26px;
 
   background-color: #ffffff;
 }
@@ -15,7 +16,7 @@
 
   background-color: #eeeeee;
 
-  @include clearfix();
+  @include clearlist();
 }
 
 .advantages__item--photo {
@@ -27,7 +28,8 @@
   margin-bottom: 50px;
   padding: 0;
 
-  @include font-size-set(18px, 26px);
+  font-size: 18px;
+  line-height: 26px;
 }
 
 .advantages__item--photo .advantages__title {
@@ -40,7 +42,8 @@
   margin-bottom: 26px;
   padding: 0;
 
-  @include font-size-set(14px, 21px);
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .advantages__item--photo .advantages__description {

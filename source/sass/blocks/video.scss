@@ -4,7 +4,8 @@
   margin-bottom: 30px;
   padding: 0;
 
-  @include font-size-set(18px, 26px);
+  font-size: 18px;
+  line-height: 26px;
 }
 
 .video__text {
@@ -13,5 +14,6 @@
   margin-bottom: 35px;
   padding: 0;
 
-  @include font-size-set(14px, 24px);
+  font-size: 14px;
+  line-height: 24px;
 }
