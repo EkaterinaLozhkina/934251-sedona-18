@@ -56,8 +56,9 @@
 }
 
 .feedback__wrapper--full-name .feedback__input {
-  width: 100%;
+  width: 100px;
   margin-left: 10px;
+  flex-grow: 1;
 }
 
 .feedback__input--radio,
