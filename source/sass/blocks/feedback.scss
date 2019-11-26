@@ -3,23 +3,12 @@
 }
 
 .feedback__wrapper {
-  display: flex;
-  flex-direction: column;
   margin: 0;
   padding: 20px 0;
 
   text-align: left;
 
   border: none;
-}
-
-.feedback__wrapper--full-name {
-  flex-direction: row;
-  align-items: baseline;
-}
-
-.feedback__wrapper--contacts .feedback__label {
-  margin-left: 22px;
 }
 
 .feedback__title {
@@ -34,18 +23,19 @@
 }
 
 .feedback__label {
-  margin: 0;
-  margin-right: 14px;
-  padding: 0;
+  display: flex;
+  align-items: baseline;
 
   font-size: 14px;
   line-height: 26px;
 }
 
+.feedback__wrapper--contacts .feedback__label {
+  margin-left: 22px;
+}
+
 .feedback__label--radio,
 .feedback__label--checkbox {
-  align-items: baseline;
-
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
@@ -65,12 +55,18 @@
   border: none;
 }
 
+.feedback__wrapper--full-name .feedback__input {
+  width: 100%;
+  margin-left: 10px;
+}
+
 .feedback__input--radio,
 .feedback__input--checkbox {
   margin-right: 23px;
 }
 
 .feedback__input--text {
+  width: 100%;
   height: 160px;
   padding: 15px 20px;
 }
