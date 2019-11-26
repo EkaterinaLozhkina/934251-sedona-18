@@ -1,0 +1,40 @@
+.pop-up {
+  padding: 0;
+  padding-top: 25px;
+  padding-bottom: 35px;
+}
+
+.pop-up__title {
+  margin: 35px 0;
+  padding: 0;
+
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.pop-up__text {
+  margin: 25px 50px;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.pop-up__button {
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 17px 78px;
+
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #ffffff;
+
+  text-transform: uppercase;
+
+  border: none;
+}
+
+.pop-up--success .pop-up__button {
+  padding: 17px 67px;
+}
