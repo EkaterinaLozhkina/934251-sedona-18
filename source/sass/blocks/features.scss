@@ -1,11 +1,10 @@
 .features {
+  color: #000000;
+
   background-color: #ffffff;
 }
 
 .features__list {
-  display: flex;
-  flex-direction: column;
-
   @include clearlist();
   padding: 38px 0;
 
@@ -38,4 +37,49 @@
 
   font-size: 14px;
   line-height: 21px;
+}
+
+@media (min-width: 768px) {
+  .features__list {
+    display: flex;
+    flex-direction: space-between;
+
+    text-align: center;
+  }
+
+  .features__item {
+    width: 256px;
+    margin: 0;
+    margin-top: 72px;
+  }
+
+  .features__title {
+    margin: 0;
+  }
+
+  .features__description {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 50px;
+  }
+
+  .features__item--gift {
+    order: 2;
+  }
+
+  .features__item--gift .features__description {
+    padding: 0 45px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .features__item {
+    width: 400px;
+    margin: 0;
+    margin-top: 75px;
+  }
+
+  .features__item--gift .features__description {
+    padding: 0 104px;
+  }
 }

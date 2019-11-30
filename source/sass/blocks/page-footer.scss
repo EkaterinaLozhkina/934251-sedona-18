@@ -7,3 +7,21 @@
   padding-top: 38px;
   padding-bottom: 32px;
 }
+
+@media (min-width: 768px) {
+  .page-footer {
+    flex-direction: row;
+    align-items: center;
+    width: 768px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-footer {
+    width: 1200px;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
