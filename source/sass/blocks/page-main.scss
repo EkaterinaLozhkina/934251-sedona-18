@@ -1,5 +1,6 @@
 .page-main {
   width: 320px;
+  margin: 0 auto;
 }
 
 .page-main__title {
@@ -48,6 +49,10 @@
     font-size: 21px;
     line-height: 26px;
   }
+
+  .page-main__text {
+    margin: 32px 170px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -58,5 +63,9 @@
   .page-main__slogan {
     margin-left: 355px;
     margin-right: 355px;
+  }
+
+  .page-main__text {
+    margin: 32px 385px;
   }
 }
