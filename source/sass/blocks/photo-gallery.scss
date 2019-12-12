@@ -1,19 +1,20 @@
 .photo-gallery__list {
   @include clearlist();
-  box-shadow: inset 1px 0 0 1px #e5e5e5;
+
+  border-top: 1px solid #e5e5e5;
 }
 
 .photo-gallery__item {
   padding: 17px 20px;
 
   text-align: left;
-  box-shadow: inset 0 1px #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .photo-gallery__img {
   display: block;
-  width: 280px;
-  height: 280px;
+  width: 100%;
+  height: auto;
 }
 
 .photo-gallery__title {
@@ -89,11 +90,6 @@
     width: 100%;
   }
 
-  .photo-gallery__img {
-    width: 324px;
-    height: auto;
-  }
-
   .photo-gallery__item:first-child .photo-gallery__img {
     height: 400px;
   }
@@ -121,10 +117,6 @@
   }
 
   .photo-gallery__item {
-    width: 400px;
-  }
-
-  .photo-gallery__img {
     width: 400px;
   }
 

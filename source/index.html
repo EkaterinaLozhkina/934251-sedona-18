@@ -2,7 +2,6 @@
 <html lang="ru">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="format-detection" content="telephone=no">
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -11,8 +10,8 @@
     <header class="page-header">
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link">Главная</a>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--active">Главная</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="photo.html">Фото и видео</a>
@@ -26,20 +25,22 @@
         </ul>
       </nav>
 
-      <a class="page-header__logo">
-        <img class="page-header__logo-img" src="https://via.placeholder.com/102x83" alt="Sedona">
-      </a>
-      <button class="page-header__toggle page-header__toggle--close" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="page-header__bg"></div>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <img class="page-header__logo-img" src="https://via.placeholder.com/102x83" alt="Sedona">
+        </a>
+        <button class="page-header__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="page-header__bg"></div>
+      </div>
     </header>
 
     <main class="page-main">
       <h1 class="visually-hidden">Седона для туристов</h1>
-      <b class="page-main__slogan">
+      <p class="page-main__slogan">
         Седона - небольшой городок в Аризоне, заслуживающий большего!
-      </b>
+      </p>
 
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
