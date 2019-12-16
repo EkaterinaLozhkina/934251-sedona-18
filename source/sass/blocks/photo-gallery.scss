@@ -13,8 +13,9 @@
 
 .photo-gallery__img {
   display: block;
-  width: 100%;
+  width: 280px;
   height: auto;
+  margin: 0 auto;
 }
 
 .photo-gallery__title {
@@ -72,9 +73,10 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 0 60px;
+    width: 648px;
+    margin: 0 auto;
 
-    box-shadow: none;
+    border: none;
   }
 
   .photo-gallery__item {
@@ -83,7 +85,7 @@
     width: 324px;
     padding: 0;
 
-    box-shadow: none;
+    border: none;
   }
 
   .photo-gallery__item:first-child {
@@ -113,6 +115,7 @@
 
 @media (min-width: 1200px) {
   .photo-gallery__list {
+    width: 100%;
     margin: 0;
   }
 

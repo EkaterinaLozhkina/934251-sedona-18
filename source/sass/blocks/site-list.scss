@@ -16,8 +16,8 @@
   color: #ffffff;
 
   text-decoration: none;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  border-bottom: 1px solid rgba(001, 001, 001, 0.2);
+  border-top: 1px solid rgba(#ffffff, 0.2);
+  border-bottom: 1px solid rgba(#010101, 0.2);
 }
 
 .site-list__item:first-child .site-list__link {
@@ -36,14 +36,14 @@
 }
 
 .site-list__link:active {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(#ffffff, 0.3);
   background-color: #5496bd;
 }
 
 @media (min-width: 768px) {
   .site-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
     font-size: 14px;
     line-height: 26px;
@@ -73,7 +73,7 @@
   }
 
   .site-list__link:active {
-    color: rgba(0, 0, 0, 0.3);
+    color: rgba(#000000, 0.3);
 
     background-color: transparent;
   }
@@ -88,6 +88,6 @@
   }
 
   .site-list__link--active:active {
-    color: rgba(118, 99, 87, 0.3);
+    color: rgba(#604e43, 0.3);
   }
 }
