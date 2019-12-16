@@ -13,3 +13,17 @@
 
   @include clearlist();
 }
+
+@media (min-width: 768px) {
+  .social__title {
+    display: inline;
+    margin: 0;
+    margin-right: 110px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .social__title {
+    margin-right: 270px;
+  }
+}

@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title>Фото и видео</title>
+    <title>HTML Academy: Седона</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
@@ -10,25 +11,25 @@
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link button" href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link button">Фото и видео</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link button" href="form.html">Форма отзыва</a>
+            <a class="site-list__link site-list__link--active">Фото и видео</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link button" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <a class="site-list__link" href="form.html">Форма отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
       </nav>
 
       <div class="page-header__wrapper">
-        <a class="page-header__logo">
+        <a class="page-header__logo" href="index.html">
           <img class="page-header__logo-img" src="https://via.placeholder.com/102x83" alt="Sedona">
         </a>
-        <button class="page-header__toggle page-header__toggle--burger" type="button">
+        <button class="page-header__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="page-header__bg page-header__bg--inner"></div>
@@ -49,57 +50,73 @@
             <a href="#">
               <img class="photo-gallery__img" src="img/photo-sunset-mobile@1x.jpg" alt="Sedona sunset">
             </a>
-            <h3 class="photo-gallery__title">Неродные просторы</h3>
-            <p class="photo-gallery__autor">Автор фото:
-              <cite class="photo-gallery__autor-name">Борис</cite>
-            </p>
+            <div class="photo-gallery__wrapper">
+              <div class="photo-gallery__info">
+                <h3 class="photo-gallery__title">Неродные просторы</h3>
+                <p class="photo-gallery__autor">Автор фото:
+                  <cite class="photo-gallery__autor-name">Борис</cite>
+                </p>
+              </div>
 
-            <button class="photo-gallery__button">
-              <img class="photo-gallery__img-like" src="https://via.placeholder.com/23x21">
-              <b class="photo-gallery__num-like">1350</b>
-            </button>
+              <button class="photo-gallery__button">
+                <img class="photo-gallery__img-like" src="https://via.placeholder.com/23x21">
+                <b class="photo-gallery__num-like">1350</b>
+              </button>
+            </div>
           </li>
           <li class="photo-gallery__item">
             <a href="#">
               <img class="photo-gallery__img" src="img/photo-cactus-mobile@1x.jpg" alt="Sedona cactus">
             </a>
-            <h3 class="photo-gallery__title">Местная растительность</h3>
-            <p class="photo-gallery__autor">Автор фото:
-              <cite class="photo-gallery__autor-name">Сергей</cite>
-            </p>
+            <div class="photo-gallery__wrapper">
+              <div class="photo-gallery__info">
+                <h3 class="photo-gallery__title">Местная растительность</h3>
+                <p class="photo-gallery__autor">Автор фото:
+                  <cite class="photo-gallery__autor-name">Сергей</cite>
+                </p>
+              </div>
 
-            <button class="photo-gallery__button">
-              <img class="photo-gallery__img-like" src="https://via.placeholder.com/23x21">
-              <b class="photo-gallery__num-like">143</b>
-            </button>
+              <button class="photo-gallery__button">
+                <img class="photo-gallery__img-like" src="https://via.placeholder.com/23x21">
+                <b class="photo-gallery__num-like">143</b>
+              </button>
+            </div>
           </li>
           <li class="photo-gallery__item">
             <a href="#">
               <img class="photo-gallery__img" src="img/photo-roads-mobile@1x.jpg" alt="Sedona roads">
             </a>
-            <h3 class="photo-gallery__title">Дорога на север</h3>
-            <p class="photo-gallery__autor">Автор фото:
-              <cite class="photo-gallery__autor-name">Петр</cite>
-            </p>
+            <div class="photo-gallery__wrapper">
+              <div class="photo-gallery__info">
+                <h3 class="photo-gallery__title">Дорога на север</h3>
+                <p class="photo-gallery__autor">Автор фото:
+                  <cite class="photo-gallery__autor-name">Петр</cite>
+                </p>
+              </div>
 
-            <button class="photo-gallery__button">
-              <img class="photo-gallery__img-like" src="https://via.placeholder.com/23x21">
-              <b class="photo-gallery__num-like">96</b>
-            </button>
+              <button class="photo-gallery__button">
+                <img class="photo-gallery__img-like" src="https://via.placeholder.com/23x21">
+                <b class="photo-gallery__num-like">96</b>
+              </button>
+            </div>
           </li>
           <li class="photo-gallery__item">
             <a href="#">
               <img class="photo-gallery__img" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Sedona Devil's Bridge">
             </a>
-            <h3 class="photo-gallery__title">Мост дьявола</h3>
-            <p class="photo-gallery__autor">Автор фото:
-              <cite class="photo-gallery__autor-name">Антон</cite>
-            </p>
+            <div class="photo-gallery__wrapper">
+              <div class="photo-gallery__info">
+                <h3 class="photo-gallery__title">Мост дьявола</h3>
+                <p class="photo-gallery__autor">Автор фото:
+                  <cite class="photo-gallery__autor-name">Антон</cite>
+                </p>
+              </div>
 
-            <button class="photo-gallery__button">
-              <img class="photo-gallery__img-like" src="https://via.placeholder.com/23x21">
-              <b class="photo-gallery__num-like">254</b>
-            </button>
+              <button class="photo-gallery__button">
+                <img class="photo-gallery__img-like" src="https://via.placeholder.com/23x21">
+                <b class="photo-gallery__num-like">254</b>
+              </button>
+            </div>
           </li>
         </ul>
       </section>

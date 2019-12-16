@@ -2,8 +2,32 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 320px;
+  margin: 0;
   padding: 0;
   padding-top: 38px;
   padding-bottom: 32px;
+
+  background-color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .page-footer {
+    flex-direction: row;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-footer {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 120px;
+    padding-right: 120px;
+
+    box-shadow: 0 -1px 1px #ffffff,
+      -10px 0 7px -7px #dbdbdb,
+      10px 0 7px -7px #dbdbdb;
+  }
 }
