@@ -18,6 +18,8 @@
   background-color: #eeeeee;
 
   @include clearlist();
+
+  counter-reset: section;
 }
 
 .advantages__item {
@@ -62,16 +64,17 @@
   line-height: 21px;
 }
 
-/* .advantages__description::before {
+.advantages__description::before {
   position: absolute;
-  content: "\2013  №1 \2013";
+  counter-increment: section;
+  content: "\2013  №" counter(section) " \2013";
   top: -35px;
   left: 50%;
-  margin-left: -21px;
+  margin-left: -23px;
 
   font-size: 14px;
   line-height: 21px;
-} */
+}
 
 .advantages__item--photo .advantages__description {
   margin-bottom: 42px;
