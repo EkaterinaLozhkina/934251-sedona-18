@@ -1,3 +1,8 @@
+.my-player {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .my-player__video {
   display: block;
 }
@@ -15,14 +20,14 @@
   width: 100%;
   padding: 20px 22px;
 
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(#000000, 0.6);
 }
 
 .my-player__progress-bar {
   position: relative;
   height: 3px;
 
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(#dbdbdb, 0.2);
 }
 
 .my-player__slider {
@@ -42,16 +47,55 @@
   display: flex;
   justify-content: space-between;
   align-content: center;
+  padding: 23px;
 }
 
 .my-player__button {
   display: block;
-  width: 32px;
-  height: 66px;
+  width: 16px;
+  height: 20px;
 
+  background: none;
   border: none;
 }
 
 .my-player__button--replay {
   margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .my-player {
+    width: 648px;
+  }
+
+  .my-player__controls {
+    margin: 0;
+    margin-top: -93px;
+    padding: 36px 0;
+
+    background-color: rgba(#000000, 0.6);
+  }
+
+  .my-player__progress-bar-wrapper {
+    top: 45px;
+    width: 389px;
+    margin-left: 93px;
+    padding: 0;
+
+    background-color: transparent;
+  }
+
+  .my-player__buttons-wrapper {
+    padding: 0 23px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .my-player {
+    width: 800px;
+  }
+
+  .my-player__progress-bar-wrapper {
+    width: 540px;
+  }
 }
