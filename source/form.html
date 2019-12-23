@@ -44,7 +44,7 @@
       </p>
 
       <form class="form" action="https://echo.htmlacademy.ru">
-        <fieldset class="form__block form__block--full-name">
+        <fieldset class="form__block form__block--name">
           <h2 class="form__title form__title--left">Представьтесь:</h2>
           <div class="form__wrapper">
             <label class="form__label">Имя*:<input class="form__input" type="text" name="first-name" placeholder="Петр" required>
@@ -68,33 +68,33 @@
 
         <fieldset class="form__block">
           <h2 class="form__title form__title--left">Ваше общее впечатление:</h2>
-          <div class="form__wrapper">
-            <label class="form__label form__label--radio">
-              <input class="form__input form__input--radio" type="radio" name="opinion" checked>Скорее положительное
+          <div class="form__wrapper form__controls">
+            <label class="form__label">
+              <input class="form__input" type="radio" name="opinion" checked>Скорее положительное
             </label>
-            <label class="form__label form__label--radio">
-              <input class="form__input form__input--radio" type="radio" name="opinion">Скорее отрицательное
+            <label class="form__label">
+              <input class="form__input" type="radio" name="opinion">Скорее отрицательное
             </label>
-            <label class="form__label form__label--radio">
-              <input class="form__input form__input--radio" type="radio" name="opinion">Затрудняюсь ответить
+            <label class="form__label">
+              <input class="form__input" type="radio" name="opinion">Затрудняюсь ответить
             </label>
           </div>
         </fieldset>
 
         <fieldset class="form__block">
           <h2 class="form__title">Посещенные достопримечательности:</h2>
-          <div class="form__wrapper">
-            <label class="form__label form__label--checkbox">
-              <input class="form__input form__input--checkbox" type="checkbox" name="bridge" checked>Мост Дьявола
+          <div class="form__wrapper form__controls">
+            <label class="form__label">
+              <input class="form__input" type="checkbox" name="bridge" checked>Мост Дьявола
             </label>
-            <label class="form__label form__label--checkbox">
-              <input class="form__input form__input--checkbox" type="checkbox" name="mount" checked>Гора-Колокол
+            <label class="form__label">
+              <input class="form__input" type="checkbox" name="mount" checked>Гора-Колокол
             </label>
-            <label class="form__label form__label--checkbox">
-              <input class="form__input form__input--checkbox" type="checkbox" name="park" checked>Слайд-парк
+            <label class="form__label">
+              <input class="form__input" type="checkbox" name="park" checked>Слайд-парк
             </label>
-            <label class="form__label form__label--checkbox">
-              <input class="form__input form__input--checkbox" type="checkbox" name="rocks">Красные скалы
+            <label class="form__label">
+              <input class="form__input" type="checkbox" name="rocks">Красные скалы
             </label>
           </div>
         </fieldset>
@@ -105,6 +105,7 @@
         </div>
 
         <button class="form__button button" type="submit" name="post-review">Отправить отзыв</button>
+        <small class="form__legend"><sup>*</sup> &ndash; обязательные поля</small>
       </form>
 
       <!-- Попапы -->
