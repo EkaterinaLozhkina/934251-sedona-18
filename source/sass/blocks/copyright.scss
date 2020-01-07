@@ -1,8 +1,23 @@
 .copyright__text {
-  margin-right: 10px;
+  margin-right: 43px;
   padding: 0;
 
   font-size: 14px;
   line-height: 26px;
   font-weight: normal;
+}
+
+.copyright__link {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: -5px;
+    left: -29px;
+    width: 27px;
+    height: 34px;
+    content: "";
+
+    background-image: url("../img/logo-htmlacademy.svg");
+  }
 }

@@ -10,7 +10,7 @@
 
 .site-list__link {
   display: block;
-  padding: 10px 0;
+  padding: 7px 0;
 
   vertical-align: middle;
   color: #ffffff;
@@ -18,6 +18,18 @@
   text-decoration: none;
   border-top: 1px solid rgba(#ffffff, 0.2);
   border-bottom: 1px solid rgba(#010101, 0.2);
+
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+
+    outline: none;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
+    background-color: #5496bd;
+  }
 }
 
 .site-list__item:first-child .site-list__link {
@@ -28,17 +40,7 @@
   border-bottom: none;
 }
 
-.site-list__link:hover,
-.site-list__link:focus {
-  background-color: #669ec0;
-
-  outline: none;
-}
-
-.site-list__link:active {
-  color: rgba(#ffffff, 0.3);
-  background-color: #5496bd;
-}
+/* Для планшетного макета */
 
 @media (min-width: 768px) {
   .site-list {
@@ -52,42 +54,44 @@
   }
 
   .site-list__item {
-    width: 239px;
-  }
+    width: 230px;
 
-  .site-list__item:nth-child(2) {
-    margin-right: 156px;
+    &:nth-child(2) {
+      margin-right: 156px;
+    }
   }
 
   .site-list__link {
+    padding: 15px 0;
+
     color: #000000;
 
     border: none;
-  }
 
-  .site-list__link:hover,
-  .site-list__link:focus {
-    color: #81b3d2;
+    &:hover,
+    &:focus {
+      color: #81b3d2;
 
-    background-color: transparent;
-  }
+      background-color: transparent;
+    }
 
-  .site-list__link:active {
-    color: rgba(#000000, 0.3);
+    &:active {
+      color: rgba(#000000, 0.3);
 
-    background-color: transparent;
-  }
+      background-color: transparent;
+    }
 
-  .site-list__link--active {
-    color: #766357;
-  }
+    &--active {
+      color: #766357;
 
-  .site-list__link--active:hover,
-  .site-list__link--active:focus {
-    color: #604e43;
-  }
+      &:hover,
+      &:focus {
+        color: #604e43;
+      }
 
-  .site-list__link--active:active {
-    color: rgba(#604e43, 0.3);
+      &:active {
+        color: rgba(#604e43, 0.3);
+      }
+    }
   }
 }

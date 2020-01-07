@@ -4,7 +4,7 @@
 
 .map__title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 21px;
   padding: 0;
 
   font-size: 21px;
@@ -35,7 +35,8 @@
   width: 280px;
   margin: 0 auto;
   margin-bottom: 50px;
-  padding: 16px 0;
+  padding-top: 15px;
+  padding-bottom: 16px;
 
   font-size: 21px;
   line-height: 26px;
@@ -46,11 +47,23 @@
 }
 
 @media (min-width: 768px) {
+  .map {
+    padding-top: 55px;
+  }
+
+  .map__title {
+    margin-bottom: 30px;
+
+    font-size: 30px;
+  }
+
   .map__text {
     max-width: 440px;
+    margin-bottom: 42px;
   }
 
   .map__button {
     width: 458px;
+    margin-bottom: 59px;
   }
 }
