@@ -8,9 +8,10 @@
 
 @media (min-width: 768px) {
   .page-footer {
+    width: 648px;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
-    padding-top: 45px;
+    margin: 0 auto;
+    padding-top: 37px;
   }
 }
