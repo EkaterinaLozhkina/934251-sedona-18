@@ -14,6 +14,8 @@
 
 .page-header__logo-img {
   display: block;
+  width: 102px;
+  height: 84px;
 }
 
 .page-header__toggle {
@@ -40,13 +42,44 @@
   background-repeat: no-repeat;
   background-size: auto 100%;
 
+  /* Текст на фоне на главной странице */
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 280px;
+    height: 332px;
+    margin-top: -135px;
+    margin-left: -140px;
+    content: "";
+
+    background-image: url("../img/text-sedona-index.svg");
+    background-size: 280px 332px;
+  }
+
   /* Фон на внутренних страницах */
 
   &--inner {
-    height: 160px;
+    height: 159px;
 
     background-position: bottom;
     background-size: auto;
+  }
+
+  /* Текст на фоне на внутренних страницах */
+
+  &--inner::before {
+    position: absolute;
+    top: 50%;
+    width: 230px;
+    height: 80px;
+    margin-top: -20px;
+    margin-left: -115px;
+    content: "";
+
+    background-image: url("../img/text-sedona.svg");
+    background-size: 230px 80px;
   }
 }
 
@@ -71,12 +104,34 @@
 
     background-image: url("../img/bg-back-tablet@1x.jpg");
 
+    /* Текст на фоне на главной странице */
+
+    &::before {
+      width: 648px;
+      height: 352px;
+      margin-top: -155px;
+      margin-left: -324px;
+
+      background-size: 648px 352px;
+    }
+
     /* Фон на внутренних страницах */
 
     &--inner {
       height: 291px;
 
       background-size: 100%;
+    }
+
+    /* Текст на фоне на внутренних страницах */
+
+    &--inner::before {
+      width: 456px;
+      height: 80px;
+      margin-top: -24px;
+      margin-left: -227px;
+
+      background-size: 456px 80px;
     }
   }
 }
