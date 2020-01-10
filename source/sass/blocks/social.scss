@@ -30,6 +30,15 @@
 
   background-color: #81b3d2;
 
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+
   &--twitter::before {
     position: absolute;
     top: 50%;
@@ -67,6 +76,12 @@
     content: "";
 
     background-image: url("../img/icon-youtube.svg");
+  }
+
+  &--twitter:active::before,
+  &--facebook:active::before,
+  &--youtube:active::before {
+    opacity: 0.3;
   }
 }
 
