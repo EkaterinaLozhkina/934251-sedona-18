@@ -95,3 +95,9 @@
     }
   }
 }
+
+@media (min-width: 1200px) {
+  .site-list__item:nth-child(2) {
+    margin-right: 246px;
+  }
+}

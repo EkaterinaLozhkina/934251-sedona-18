@@ -1,5 +1,5 @@
 .map {
-  padding-top: 30px;
+  padding-top: 29px;
 }
 
 .map__title {
@@ -14,7 +14,7 @@
 .map__text {
   max-width: 280px;
   margin: 0 auto;
-  margin-bottom: 36px;
+  margin-bottom: 35px;
   padding: 0;
 
   font-size: 14px;
@@ -58,12 +58,26 @@
   }
 
   .map__text {
-    max-width: 440px;
+    max-width: 435px;
     margin-bottom: 42px;
   }
 
   .map__button {
     width: 458px;
     margin-bottom: 59px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .map__title {
+    margin-bottom: 32px;
+  }
+
+  .map__text {
+    margin-bottom: 47px;
+  }
+
+  .map__button {
+    margin-bottom: 67px;
   }
 }

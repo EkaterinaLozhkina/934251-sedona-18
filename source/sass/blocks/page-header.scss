@@ -107,12 +107,12 @@
     /* Текст на фоне на главной странице */
 
     &::before {
-      width: 648px;
-      height: 352px;
-      margin-top: -155px;
-      margin-left: -324px;
+      width: 460px;
+      height: 350px;
+      margin-top: -153px;
+      margin-left: -230px;
 
-      background-size: 648px 352px;
+      background-size: 460px 350px;
     }
 
     /* Фон на внутренних страницах */
@@ -139,6 +139,12 @@
 @media (min-width: 1200px) {
   .page-header__bg {
     background-image: url("../img/bg-back-desktop@1x.jpg");
+
+    /* Текст на фоне на главной странице */
+
+    &::before {
+      margin-top: -152px;
+    }
 
     /* Фон на внутренних страницах */
 

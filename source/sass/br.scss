@@ -1,9 +1,8 @@
 .br {
-  display: none;
-}
+    display: none;
+  }
 
-/* Для планшетного макета */
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .br {
     display: block;
   }

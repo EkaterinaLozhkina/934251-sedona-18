@@ -153,10 +153,15 @@
 @media (min-width: 1200px) {
   .features__list {
     max-width: 1200px;
+    padding-top: 154px;
+    padding-bottom: 82px;
   }
 
   .features__item {
     width: 400px;
-    margin-top: 75px;
+  }
+
+  .features__description {
+    max-width: 285px;
   }
 }
