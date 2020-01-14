@@ -143,21 +143,22 @@
   .form__legend {
     display: inline;
   }
+
+  .form__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__block:nth-child(4) .form__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form__block:nth-child(4) .form__label {
+    width: 324px;
+  }
 }
 
-.form__wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
-.form__block:nth-child(4) .form__wrapper {
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.form__block:nth-child(4) .form__label {
-  width: 324px;
-}
 
 @media (min-width: 1200px) {
   .form {

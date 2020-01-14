@@ -1,13 +1,11 @@
 .page-main {
-  min-width: 320px;
-  margin: 0 auto;
-  padding-top: 44px;
-
-  background-color: #ffffff;
+  padding-top: 42px;
 }
 
 .page-main__title {
-  margin: 32px 0;
+  margin: 0;
+  margin-top: -5px;
+  margin-bottom: 27px;
   padding: 0;
 
   font-size: 18px;
@@ -15,8 +13,9 @@
 }
 
 .page-main__slogan {
-  max-width: 280px;
+  max-width: 260px;
   margin: 0 auto;
+  margin-bottom: 28px;
   padding: 0;
 
   font-size: 18px;
@@ -25,9 +24,9 @@
 }
 
 .page-main__text {
-  max-width: 277px;
+  max-width: 270px;
   margin: 0 auto;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
   padding: 0;
 
   font-size: 14px;
@@ -35,29 +34,43 @@
 }
 
 @media (min-width: 768px) {
+  .page-main {
+    padding-top: 50px;
+  }
+
   .page-main__title {
+    margin-top: 24px;
+    margin-bottom: 31px;
+
     font-size: 30px;
     line-height: 26px;
   }
 
   .page-main__slogan {
     max-width: 610px;
+    margin-bottom: 30px;
 
     font-size: 21px;
     line-height: 26px;
   }
 
   .page-main__text {
+    margin-bottom: 68px;
+
     max-width: 440px;
   }
 }
 
 @media (min-width: 1200px) {
   .page-main {
-    width: 1200px;
+    padding-top: 49px;
+  }
 
-    box-shadow: 0 -1px 1px #ffffff,
-      -10px 0 7px -7px #dbdbdb,
-      10px 0 7px -7px #dbdbdb;
+  .page-main__title {
+    margin-top: 62px;
+  }
+
+  .page-main__text {
+    margin-bottom: 72px;
   }
 }

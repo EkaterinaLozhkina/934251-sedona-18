@@ -1,10 +1,11 @@
 .video {
-  padding-top: 34px;
+  padding-top: 32px;
+  margin-bottom: 40px;
 }
 
 .video__title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
   padding: 0;
 
   font-size: 18px;
@@ -22,7 +23,26 @@
 }
 
 @media (min-width: 768px) {
+  .video {
+    padding-top: 67px;
+  }
+
+  .video__title {
+    margin-bottom: 31px;
+
+    font-size: 30px;
+  }
+
   .video__text {
     max-width: 440px;
+
+    margin-bottom: 73px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .video {
+    padding-top: 70px;
+    margin-bottom: 85px;
   }
 }

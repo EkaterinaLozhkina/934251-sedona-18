@@ -1,8 +1,35 @@
 .copyright__text {
-  margin-right: 10px;
-  padding: 0;
+  margin-right: 43px;
 
   font-size: 14px;
   line-height: 26px;
   font-weight: normal;
+}
+
+.copyright__link {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: -5px;
+    left: -29px;
+    width: 27px;
+    height: 34px;
+    content: "";
+
+    background-image: url("../img/logo-htmlacademy.svg");
+  }
+}
+
+@media (min-width: 768px) {
+  .copyright {
+    display: flex;
+    width: 130px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .copyright__link::after {
+    top: -16px;
+  }
 }

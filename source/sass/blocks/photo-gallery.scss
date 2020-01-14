@@ -1,11 +1,15 @@
 .photo-gallery__list {
   @include clearlist();
 
+  width: 320px;
+  margin: 0 auto;
+
   border-top: 1px solid #e5e5e5;
 }
 
 .photo-gallery__item {
-  padding: 17px 20px;
+  padding: 0 20px;
+  padding-top: 20px;
 
   text-align: left;
   border-bottom: 1px solid #e5e5e5;
@@ -16,11 +20,11 @@
   width: 280px;
   height: auto;
   margin: 0 auto;
+  margin-bottom: 16px;
 }
 
 .photo-gallery__title {
   margin: 0;
-  margin-top: 17px;
   padding: 0;
 
   font-size: 14px;
@@ -29,7 +33,7 @@
 
 .photo-gallery__autor {
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 8px;
   padding: 0;
 
   font-size: 14px;
@@ -44,8 +48,12 @@
 
 .photo-gallery__button {
   position: relative;
+  width: 65px;
   margin: 0;
+  margin-bottom: 18px;
   padding: 0;
+
+  text-align: left;
 
   background-color: transparent;
   border: none;
@@ -53,12 +61,13 @@
 
 .photo-gallery__img-like {
   position: absolute;
-  width: 23px;
-  height: 21px;
-
-  vertical-align: middle;
+  top: 0;
+  left: 0;
+  width: 22px;
+  height: 20px;
 
   border: none;
+  opacity: 0.3;
 }
 
 .photo-gallery__num-like {
@@ -86,30 +95,44 @@
     padding: 0;
 
     border: none;
+
+    &:first-child {
+      width: 100%;
+    }
+
+    &:first-child .photo-gallery__img {
+      height: 400px;
+    }
+
+    &:nth-child(3n) .photo-gallery__wrapper {
+      background-color: #eaeaea;
+    }
   }
 
-  .photo-gallery__item:first-child {
-    width: 100%;
-  }
-
-  .photo-gallery__item:first-child .photo-gallery__img {
-    height: 400px;
+  .photo-gallery__img {
+    height: 267px; /* временно */
+    margin-bottom: 0;
   }
 
   .photo-gallery__wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 16px 20px;
 
     background-color: #f2f2f2;
   }
 
-  .photo-gallery__title {
-    margin-top: 0;
+  .photo-gallery__button {
+    margin-bottom: 0;
   }
 
   .photo-gallery__autor {
     margin-bottom: 0;
+  }
+
+  .photo-gallery__num-like {
+    margin-left: 32px;
   }
 }
 
@@ -121,10 +144,15 @@
 
   .photo-gallery__item {
     width: 400px;
+
+    &:nth-child(3n) .photo-gallery__wrapper {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
   }
 
   .photo-gallery__wrapper {
     margin-top: -80px;
+    padding-top: 15px;
 
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0.3);
