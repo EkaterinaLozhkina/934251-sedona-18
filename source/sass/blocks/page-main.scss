@@ -13,6 +13,7 @@
 }
 
 .page-main__slogan {
+  position: relative;
   max-width: 260px;
   margin: 0 auto;
   margin-bottom: 28px;
@@ -21,6 +22,17 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
+
+  &::before {
+    position: absolute;
+    top: -67px;
+    left: -30px;
+    width: 320px;
+    height: 26px;
+    content: "";
+
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+  }
 }
 
 .page-main__text {

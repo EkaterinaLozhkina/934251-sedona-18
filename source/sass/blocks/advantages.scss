@@ -1,10 +1,22 @@
 .advantages__text {
+  position: relative;
   max-width: 260px;
   margin: 0 auto;
-  margin-bottom: 42px;
+  margin-bottom: 25px;
 
   font-size: 14px;
   line-height: 26px;
+
+  &::after {
+    position: absolute;
+    left: -30px;
+    bottom: -41px;
+    width: 320px;
+    height: 37px;
+    content: "";
+
+    background-image: url("../img/bg-triangle.svg");
+  }
 }
 
 .advantages__list {
@@ -27,6 +39,10 @@
 
     border-top: 1px solid #d6d6d6;
     border-bottom: 1px solid #d6d6d6;
+  }
+
+  &:first-child {
+    padding-top: 57px;
   }
 
   /* Элемент списка с фото */
@@ -90,6 +106,10 @@
   .advantages__text {
     max-width: 636px;
     margin-bottom: 49px;
+
+    &::after {
+      display: none;
+    }
   }
 
   .advantages__list {
@@ -102,6 +122,10 @@
     width: 256px;
     margin: 0;
     padding-top: 40px;
+
+    &:first-child {
+      padding-top: 0;
+    }
 
     &:nth-child(4) {
       padding-top: 40px;
