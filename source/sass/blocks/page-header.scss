@@ -70,13 +70,10 @@
   /* Текст на фоне на внутренних страницах */
 
   &--inner::before {
-    position: absolute;
-    top: 50%;
     width: 230px;
     height: 80px;
     margin-top: -20px;
     margin-left: -115px;
-    content: "";
 
     background-image: url("../img/text-sedona.svg");
     background-size: 230px 80px;
@@ -150,6 +147,12 @@
 
     &--inner {
       height: 302px;
+    }
+
+    /* Текст на фоне на внутренних страницах */
+
+    &--inner::before {
+      margin-top: -21px;
     }
   }
 }
