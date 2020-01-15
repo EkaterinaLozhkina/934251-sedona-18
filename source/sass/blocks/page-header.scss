@@ -62,16 +62,22 @@
   &::after {
     position: absolute;
     left: 50%;
-    bottom: -1px;
-    width: 320px;
-    height: 27px;
+    bottom: -3px;
+    width: 318px;
+    height: 26px;
     margin-left: -160px;
     content: "";
 
     background-image: url("../img/bg-intro-triangle-mobile.svg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 320px 26px;
     background-position: bottom;
+
+    border-left: solid #ffffff 1px;
+    border-bottom: solid #ffffff 3px;
+    border-right: solid #ffffff 1px;
+
+    box-sizing: content-box;
   }
 
   /* Фон на внутренних страницах */
