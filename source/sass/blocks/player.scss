@@ -48,20 +48,60 @@
   display: flex;
   justify-content: space-between;
   align-content: center;
-  padding: 23px;
+  padding: 23px 17px;
 }
 
 .player__button {
+  position: relative;
   display: block;
-  width: 16px;
+  width: 32px;
   height: 20px;
 
   background: none;
   border: none;
-}
 
-.player__button--replay {
-  margin-right: auto;
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
+
+  /* Иконки на панели управления видео */
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 20px;
+    content: "";
+
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--replay {
+    margin-right: auto;
+
+    &::before {
+      background-image: url("../img/icon-video-replay.svg");
+    }
+  }
+
+  &--subtitle {
+    margin-right: 25px;
+
+    &::before {
+      background-image: url("../img/icon-video-subtitles.svg");
+    }
+  }
+
+  &--fullscreen::before {
+    background-image: url("../img/icon-video-fullscreen.svg");
+  }
 }
 
 @media (min-width: 768px) {
@@ -90,8 +130,22 @@
     background-color: transparent;
   }
 
+  .player__slider {
+    left: 112px;
+  }
+
   .player__buttons-wrapper {
-    padding: 0 23px;
+    padding: 0 27px;
+    padding-right: 35px;
+  }
+
+  .player__button:hover,
+  .player__button:focus {
+    opacity: 0.6;
+  }
+
+  .player__button:active {
+    opacity: 0.3;
   }
 }
 
