@@ -22,17 +22,6 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
-
-  &::before {
-    position: absolute;
-    top: -67px;
-    left: -30px;
-    width: 320px;
-    height: 26px;
-    content: "";
-
-    background-image: url("../img/bg-intro-triangle-mobile.svg");
-  }
 }
 
 .page-main__text {

@@ -57,6 +57,23 @@
     background-size: 280px 332px;
   }
 
+  /* Белая стрелка */
+
+  &::after {
+    position: absolute;
+    left: 50%;
+    bottom: -1px;
+    width: 320px;
+    height: 27px;
+    margin-left: -160px;
+    content: "";
+
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: bottom;
+  }
+
   /* Фон на внутренних страницах */
 
   &--inner {
