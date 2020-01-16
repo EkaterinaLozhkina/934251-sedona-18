@@ -22,12 +22,12 @@
 }
 
 .map__img {
-  display: block;
   width: 320px;
-  height: auto;
+  height: 350px;
   margin: 0 auto;
 
   background-color: #d1deba;
+  background-image: url("../img/bg-map-mobile@1x.jpg");
 }
 
 .map__button {
@@ -66,6 +66,12 @@
     width: 458px;
     margin-bottom: 59px;
   }
+
+  .map__img {
+    width: 768px;
+
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+  }
 }
 
 @media (min-width: 1200px) {
@@ -79,5 +85,11 @@
 
   .map__button {
     margin-bottom: 67px;
+  }
+
+  .map__img {
+    width: 1200px;
+
+    background-image: url("../img/bg-map-desktop@1x.jpg");
   }
 }
