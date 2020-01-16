@@ -60,47 +60,51 @@
           <fieldset class="form__block form__block--contacts">
             <h2 class="form__title">Контактная информация:</h2>
             <div class="form__wrapper">
-              <label class="form__label" for="phone-number"><span class="form__text-hidden">Контактный </span>телефон*:</label>
-              <input class="form__input" id="phone-number" type="tel" name="phone-number" placeholder="Введите телефон" required>
-              <label class="form__label" for="email">Электронная почта*:</label>
-              <input class="form__input" id="email" type="email" name="email" placeholder="Введите e-mail" required>
+              <label class="form__label form__label--phone">
+                <span class="form__text-hidden">Контактный&nbsp;</span>телефон*:
+                <input class="form__input" type="tel" name="phone" placeholder="Введите телефон" required>
+              </label>
+              <label class="form__label form__label--email">
+                Электронная почта*:
+                <input class="form__input" type="email" name="email" placeholder="Введите e-mail" required>
+              </label>
             </div>
           </fieldset>
 
-          <fieldset class="form__block">
+          <fieldset class="form__block form__block--opinion">
             <h2 class="form__title form__title--left">Ваше общее впечатление:</h2>
-            <div class="form__wrapper form__controls">
-              <label class="form__label">
-                <input class="form__input" type="radio" name="opinion" checked>Скорее положительное
+            <div class="form__controls">
+              <label class="form__label form__label--radio">
+                <input class="form__input" type="radio" name="opinion" value="+" checked>Скорее положительное
               </label>
-              <label class="form__label">
-                <input class="form__input" type="radio" name="opinion">Скорее отрицательное
+              <label class="form__label form__label--radio">
+                <input class="form__input" type="radio" name="opinion" value="-">Скорее отрицательное
               </label>
-              <label class="form__label">
-                <input class="form__input" type="radio" name="opinion">Затрудняюсь ответить
+              <label class="form__label form__label--radio">
+                <input class="form__input" type="radio" name="opinion" value="0">Затрудняюсь ответить
               </label>
             </div>
           </fieldset>
 
-          <fieldset class="form__block">
+          <fieldset class="form__block form__block--places">
             <h2 class="form__title">Посещенные достопримечательности:</h2>
-            <div class="form__wrapper form__controls">
-              <label class="form__label">
-                <input class="form__input" type="checkbox" name="bridge" checked>Мост Дьявола
+            <div class="form__controls">
+              <label class="form__label form__label--checkbox">
+                <input class="form__input" type="checkbox" name="bridge" value="bridge" checked>Мост Дьявола
               </label>
-              <label class="form__label">
-                <input class="form__input" type="checkbox" name="mount" checked>Гора-Колокол
+              <label class="form__label form__label--checkbox">
+                <input class="form__input" type="checkbox" name="mount" value="mount" checked>Гора-Колокол
               </label>
-              <label class="form__label">
-                <input class="form__input" type="checkbox" name="park" checked>Слайд-парк
+              <label class="form__label form__label--checkbox">
+                <input class="form__input" type="checkbox" name="park" value="park" checked>Слайд-парк
               </label>
-              <label class="form__label">
-                <input class="form__input" type="checkbox" name="rocks">Красные скалы
+              <label class="form__label form__label--checkbox">
+                <input class="form__input" type="checkbox" name="rocks" value="rocks">Красные скалы
               </label>
             </div>
           </fieldset>
 
-          <div class="form__block">
+          <div class="form__block form__block--comment">
             <h2 class="form__title">Опишите свои эмоции:</h2>
             <textarea class="form__input form__input--text" placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
