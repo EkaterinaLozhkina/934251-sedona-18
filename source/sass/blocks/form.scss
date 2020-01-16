@@ -149,6 +149,11 @@
     margin-top: 7px;
     padding: 15px 20px;
   }
+
+  &::placeholder {
+    color: #000000;
+    opacity: 1;
+  }
 }
 
 .form__button {
