@@ -37,12 +37,12 @@
 
   &--name .form__input {
     width: 100px;
-    margin-left: 13px;
+    margin-left: 14px;
     flex-grow: 1;
   }
 
   &--contacts {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
 
   &--contacts .form__title {
@@ -54,7 +54,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-left: 22px;
-    margin-bottom: 8px;
+    margin-bottom: 9px;
 
     &::after {
       position: absolute;
@@ -135,7 +135,8 @@
   padding: 16px 0;
   padding-left: 20px;
 
-  font-size: 16px;
+  font-family: inherit;
+  font-size: 18px;
   line-height: 26px;
   font-weight: bold;
 
@@ -160,7 +161,8 @@
   margin: 0 auto;
   padding: 16px 0;
 
-  font-size: 18px;
+  font-family: inherit;
+  font-size: 21px;
   line-height: 26px;
   font-weight: bold;
   color: #ffffff;
@@ -273,14 +275,14 @@
 
   .form__input--text {
     margin-top: 0;
-    padding: 17px 22px;
+    padding: 16px 22px;
   }
 
   .form__button {
     width: 324px;
     margin: 0;
-
-    font-size: 20px;
+    padding-top: 14px;
+    padding-bottom: 18px;
   }
 
   .form__legend {
@@ -293,36 +295,78 @@
 @media (min-width: 1200px) {
   .form {
     max-width: 960px;
+    margin-top: -15px;
+    margin-bottom: 65px;
   }
 
   .form__block {
-    &:nth-child(1),
-    &:nth-child(3) {
-      width: 400px;
-    }
-
-    &:nth-child(3) .form__title--left {
-      margin-left: auto;
-      text-align: center;
-    }
-
-    &:nth-child(4) .form__label {
-      width: auto;
-    }
-
-    &:nth-child(2n) .form__wrapper {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: baseline;
-    }
+    margin-bottom: 58px;
+    padding-top: 0;
 
     &--name {
+      width: 400px;
       padding-left: 0;
     }
 
-    &--contacts .form__input {
-      width: 317px;
+    &--contacts {
+      margin-bottom: 29px;
     }
+
+    &--contacts .form__title {
+      margin-bottom: 67px;
+    }
+
+    &--contacts .form__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &--contacts .form__label {
+      width: 480px;
+      margin-left: 0;
+      justify-content: space-between;
+
+      &--phone {
+        width: 400px;
+      }
+
+      &::after {
+        top: 9px;
+      }
+    }
+
+    &--contacts .form__input {
+      width: 315px;
+    }
+
+    &--opinion .form__title--left {
+      width: 400px;
+      margin-left: 75px;
+      margin-bottom: 76px;
+
+      text-align: center;
+    }
+
+    &--places {
+      margin-bottom: 18px;
+    }
+
+    &--places .form__controls {
+      justify-content: space-between;
+    }
+
+    &--places .form__label {
+      width: auto;
+    }
+
+    &--comment {
+      margin-bottom: 45px;
+    }
+  }
+
+  .form__controls .form__label {
+    margin-left: 4px;
   }
 
   .form__button {
