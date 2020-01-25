@@ -10,6 +10,8 @@
   top: 0;
   left: 50%;
   margin-left: -51px;
+
+  z-index: 1;
 }
 
 .page-header__logo-img {
@@ -27,6 +29,7 @@
 
   background-color: transparent;
   background-image: url("../img/icon-menu.svg");
+  background-repeat: no-repeat;
   background-size: 23px 21px;
   border: none;
 
@@ -34,10 +37,12 @@
 }
 
 .page-header__bg {
+  position: relative;
   height: 389px;
 
   background-color: #5b7683;
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
   background-position: center;
   background-size: auto 100%;
 
@@ -49,12 +54,33 @@
     left: 50%;
     width: 280px;
     height: 332px;
-    margin-top: -135px;
+    margin-top: -163px;
     margin-left: -140px;
     content: "";
 
     background-image: url("../img/text-sedona-index.svg");
     background-size: 280px 332px;
+  }
+
+  /* Фон на внутренних страницах */
+
+  &--inner {
+    height: 159px;
+
+    background-position: bottom;
+    background-size: auto;
+  }
+
+  /* Текст на фоне на внутренних страницах */
+
+  &--inner::before {
+    width: 230px;
+    height: 80px;
+    margin-top: -20px;
+    margin-left: -115px;
+
+    background-image: url("../img/text-sedona.svg");
+    background-size: 230px 80px;
   }
 
   /* Белая стрелка */
@@ -78,27 +104,6 @@
     border-right: solid #ffffff 1px;
 
     box-sizing: content-box;
-  }
-
-  /* Фон на внутренних страницах */
-
-  &--inner {
-    height: 159px;
-
-    background-position: bottom;
-    background-size: auto;
-  }
-
-  /* Текст на фоне на внутренних страницах */
-
-  &--inner::before {
-    width: 230px;
-    height: 80px;
-    margin-top: -20px;
-    margin-left: -115px;
-
-    background-image: url("../img/text-sedona.svg");
-    background-size: 230px 80px;
   }
 }
 
@@ -128,7 +133,7 @@
     &::before {
       width: 460px;
       height: 350px;
-      margin-top: -153px;
+      margin-top: -182px;
       margin-left: -230px;
 
       background-size: 460px 350px;
@@ -152,6 +157,20 @@
 
       background-size: 456px 80px;
     }
+
+    /* Белая стрелка */
+
+    &::after {
+      bottom: 0;
+      width: 768px;
+      height: 57px;
+      margin-left: -384px;
+
+      background-image: url("../img/bg-intro-triangle-tablet.svg");
+      background-size: auto auto;
+
+      border: none;
+    }
   }
 }
 
@@ -162,7 +181,7 @@
     /* Текст на фоне на главной странице */
 
     &::before {
-      margin-top: -152px;
+      margin-top: -180px;
     }
 
     /* Фон на внутренних страницах */
@@ -175,6 +194,16 @@
 
     &--inner::before {
       margin-top: -21px;
+    }
+
+    /* Белая стрелка */
+
+    &::after {
+      left: 0;
+      width: 1200px;
+      margin-left: 0;
+
+      background-image: url("../img/bg-intro-triangle-desktop.svg");
     }
   }
 }
