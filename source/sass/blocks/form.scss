@@ -124,10 +124,14 @@
 
 .form__label {
   display: flex;
-  align-items: baseline;
+  align-items: center;
 
   font-size: 14px;
   line-height: 26px;
+
+  &--checkbox {
+    padding-left: 79px;
+  }
 }
 
 .form__input {
@@ -266,6 +270,10 @@
     &--places .form__label {
       width: 324px;
       margin-bottom: 63px;
+
+      &:last-child {
+        margin-bottom: 63px;
+      }
     }
 
     &--comment .form__title {
@@ -284,6 +292,10 @@
       margin-left: 0;
       text-align: left;
     }
+  }
+
+  .form__label--checkbox {
+    padding-left: 79px;
   }
 
   .form__input--text {
@@ -365,12 +377,17 @@
       margin-bottom: 18px;
     }
 
-    &--places .form__controls {
+   /* &--places .form__controls {
       justify-content: space-between;
-    }
+    } */
 
     &--places .form__label {
       width: auto;
+      margin-right: 73px;
+
+      &:last-child {
+        margin-right: 0;
+      }
     }
 
     &--comment {
@@ -378,8 +395,53 @@
     }
   }
 
-  .form__controls .form__label {
-    margin-left: 4px;
+  /* Кастомные чекбоксы */
+
+  .form__label--checkbox {
+    position: relative;
+    padding-left: 77px;
+  }
+
+  .form__checkbox {
+    position: absolute;
+    margin-left: -77px;
+    padding: 28px;
+
+    background-color: #f2f2f2;
+    border-radius: 5px;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 23px;
+      height: 16px;
+      margin-top: -9px;
+      margin-left: -11.5px;
+      content: "";
+
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  .form__label--checkbox .form__input:checked + .form__checkbox::before {
+    background-image: url("../img/icon-tick.svg");
+  }
+
+  .form__label--checkbox .form__input:hover + .form__checkbox,
+  .form__label--checkbox .form__input:focus + .checkbox {
+    background-color: #e5e5e5;
+
+    outline: none;
+  }
+
+  .form__label--checkbox .form__input:active + .form__checkbox {
+    background-color: #d5d5d5;
+
+    &::before {
+      opacity: 0.3;
+    }
   }
 
   .form__button {

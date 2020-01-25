@@ -76,7 +76,7 @@
   &--inner::before {
     width: 230px;
     height: 80px;
-    margin-top: -20px;
+    margin-top: -47px;
     margin-left: -115px;
 
     background-image: url("../img/text-sedona.svg");
@@ -152,7 +152,7 @@
     &--inner::before {
       width: 456px;
       height: 80px;
-      margin-top: -24px;
+      margin-top: -51px;
       margin-left: -227px;
 
       background-size: 456px 80px;
@@ -170,6 +170,7 @@
       background-size: auto auto;
 
       border: none;
+      box-sizing: inherit;
     }
   }
 }
@@ -193,7 +194,7 @@
     /* Текст на фоне на внутренних страницах */
 
     &--inner::before {
-      margin-top: -21px;
+      margin-top: -49px;
     }
 
     /* Белая стрелка */
