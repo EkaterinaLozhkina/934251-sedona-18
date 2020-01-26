@@ -35,12 +35,20 @@
   .video__text {
     max-width: 440px;
 
-    margin-bottom: 72px;
+    margin-bottom: 73px;
   }
 }
 
 @media (min-width: 1200px) {
   .video {
-    margin-bottom: 121px;
+    margin-bottom: 122px;
+  }
+
+  .video__title {
+    margin-bottom: 32px;
+  }
+
+  .video__text {
+    margin-bottom: 70px;
   }
 }

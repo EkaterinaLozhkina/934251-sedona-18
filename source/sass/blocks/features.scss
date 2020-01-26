@@ -85,6 +85,7 @@
 @media (min-width: 768px) {
   .features__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     max-width: 768px;
     padding-top: 159px;
@@ -153,8 +154,7 @@
 @media (min-width: 1200px) {
   .features__list {
     max-width: 1200px;
-    padding-top: 154px;
-    padding-bottom: 82px;
+    padding-bottom: 83px;
   }
 
   .features__item {

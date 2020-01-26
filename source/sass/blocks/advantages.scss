@@ -111,7 +111,7 @@
 
 @media (min-width: 768px) {
   .advantages {
-    margin-bottom: 55px;
+    margin-bottom: 56px;
   }
 
   .advantages__text {
@@ -168,7 +168,7 @@
   .advantages__title {
     max-width: 151px;
     margin: 0 auto;
-    margin-bottom: 54px;
+    margin-bottom: 53px;
 
     font-size: 21px;
     line-height: 26px;
@@ -189,19 +189,11 @@
 }
 
 @media (min-width: 1200px) {
-  .advantages__text {
-    margin-bottom: 51px;
-  }
-
   .advantages__item {
     width: 400px;
 
     &--photo {
       width: 100%;
-    }
-
-    &--photo .advantages__title {
-      margin-bottom: 54px;
     }
 
     &--photo .advantages__description {
@@ -216,7 +208,7 @@
   .advantages__item-wrapper {
     width: 400px;
     margin: 0;
-    padding-top: 50px;
+    padding-top: 52px;
   }
 
   .advantages__description {

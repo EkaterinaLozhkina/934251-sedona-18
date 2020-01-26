@@ -45,6 +45,22 @@
         </p>
 
         <form class="form" action="https://echo.htmlacademy.ru">
+          <fieldset class="form__block form__block--opinion">
+            <h2 class="form__title form__title--left">Ваше общее впечатление:</h2>
+            <label class="form__label control">
+              <input class="control__item visually-hidden" type="radio" name="opinion" value="+" checked>
+              <span class="control__icon control__icon--radio"></span>Скорее положительное
+            </label>
+            <label class="form__label control">
+              <input class="control__item visually-hidden" type="radio" name="opinion" value="-">
+              <span class="control__icon control__icon--radio"></span>Скорее отрицательное
+            </label>
+            <label class="form__label control">
+              <input class="control__item visually-hidden" type="radio" name="opinion" value="0">
+              <span class="control__icon control__icon--radio"></span>Затрудняюсь ответить
+            </label>
+          </fieldset>
+
           <fieldset class="form__block form__block--name">
             <h2 class="form__title form__title--left">Представьтесь:</h2>
             <label class="form__label">Имя*:<input class="form__input" type="text" name="first-name" placeholder="Петр" required>
@@ -67,22 +83,6 @@
                 <input class="form__input" type="email" name="email" placeholder="Введите e-mail" required>
               </label>
             </div>
-          </fieldset>
-
-          <fieldset class="form__block form__block--opinion">
-            <h2 class="form__title form__title--left">Ваше общее впечатление:</h2>
-            <label class="form__label control">
-              <input class="control__item visually-hidden" type="radio" name="opinion" value="+" checked>
-              <span class="control__icon control__icon--radio"></span>Скорее положительное
-            </label>
-            <label class="form__label control">
-              <input class="control__item visually-hidden" type="radio" name="opinion" value="-">
-              <span class="control__icon control__icon--radio"></span>Скорее отрицательное
-            </label>
-            <label class="form__label control">
-              <input class="control__item visually-hidden" type="radio" name="opinion" value="0">
-              <span class="control__icon control__icon--radio"></span>Затрудняюсь ответить
-            </label>
           </fieldset>
 
           <fieldset class="form__block form__block--places">
