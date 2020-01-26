@@ -2,7 +2,7 @@
   max-width: 320px;
   margin: 0 auto;
   margin-top: -10px;
-  margin-bottom: 37px;
+  margin-bottom: 71px;
 }
 
 .form__controls .form__label {
@@ -96,12 +96,12 @@
   }
 
   &--places {
-    margin-bottom: 43px;
+    margin-bottom: 42px;
     padding-top: 18px;
   }
 
   &--places .form__title {
-    margin-bottom: 32px;
+    margin-bottom: 33px;
   }
 
   &--places .form__label {
@@ -214,8 +214,8 @@
     left: 50%;
     width: 23px;
     height: 16px;
-    margin-top: -9px;
-    margin-left: -11.5px;
+    margin-top: -7px;
+    margin-left: -11px;
     content: "";
 
     background-repeat: no-repeat;
@@ -223,7 +223,7 @@
   }
 
   &--radio {
-    margin-left: -73px;
+    margin-left: -77px;
 
     border-radius: 50%;
 
@@ -267,16 +267,16 @@
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 648px;
-    margin-bottom: 60px;
+    margin-bottom: 97px;
   }
 
   .form__controls {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .form__controls .form__label {
-    width: 100%;
     margin-bottom: 52px;
   }
 
@@ -332,8 +332,13 @@
       margin-bottom: 58px;
     }
 
+    &--places .form__controls {
+      width: 456px;
+      margin: 0 auto;
+    }
+
     &--places .form__label {
-      width: 324px;
+      width: 199px;
       margin-bottom: 63px;
 
       &:last-child {
@@ -381,8 +386,12 @@
 @media (min-width: 1200px) {
   .form {
     max-width: 960px;
-    margin-top: -15px;
-    margin-bottom: 65px;
+    margin-top: -13px;
+    margin-bottom: 102px;
+  }
+
+  .form__controls .form__label {
+    padding-left: 81px;
   }
 
   .form__block {
@@ -395,7 +404,7 @@
     }
 
     &--contacts {
-      margin-bottom: 29px;
+      margin-bottom: 31px;
     }
 
     &--contacts .form__title {
@@ -412,6 +421,7 @@
       width: 480px;
       margin-left: 0;
       justify-content: space-between;
+      align-items: baseline;
 
       &--phone {
         width: 400px;
@@ -438,12 +448,16 @@
       margin-bottom: 18px;
     }
 
+    &--places .form__controls {
+      width: 100%;
+    }
+
     &--places .form__label {
       width: auto;
-      margin-right: 73px;
+      margin-right: 67px;
 
       &:last-child {
-        margin-right: 0;
+        margin-right: 2px;
       }
     }
 
@@ -458,5 +472,9 @@
 
   .form__text-hidden {
     display: none;
+  }
+
+  .form__check {
+    margin-left: -81px;
   }
 }

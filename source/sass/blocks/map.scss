@@ -1,5 +1,5 @@
 .map {
-  padding-top: 29px;
+  margin-bottom: 34px;
 }
 
 .map__title {
@@ -48,7 +48,7 @@
 
 @media (min-width: 768px) {
   .map {
-    padding-top: 55px;
+    margin-bottom: 37px;
   }
 
   .map__title {
@@ -65,6 +65,7 @@
   .map__button {
     width: 458px;
     margin-bottom: 59px;
+    padding-bottom: 17px;
   }
 
   .map__img {

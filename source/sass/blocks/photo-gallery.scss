@@ -1,3 +1,7 @@
+.photo-gallery {
+  margin-bottom: 32px;
+}
+
 .photo-gallery__list {
   @include clearlist();
 
@@ -78,6 +82,10 @@
 }
 
 @media (min-width: 768px) {
+  .photo-gallery {
+    margin-bottom: 67px;
+  }
+
   .photo-gallery__list {
     display: flex;
     flex-direction: row;
@@ -137,6 +145,9 @@
 }
 
 @media (min-width: 1200px) {
+  .photo-gallery {
+    margin-bottom: 72px;
+  }
   .photo-gallery__list {
     width: 100%;
     margin: 0;

@@ -17,6 +17,7 @@
 .social__list {
   display: flex;
   width: 151px;
+  flex-wrap: wrap;
   justify-content: space-between;
 
   @include clearlist();
@@ -80,12 +81,13 @@
     display: flex;
     width: 400px;
     margin: 0;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
   }
 
   .social__title {
-    margin-bottom: 3px;
+    margin-bottom: 5px;
   }
 }
 
