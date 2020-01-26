@@ -1,13 +1,18 @@
+.advantages {
+  margin-bottom: 29px;
+}
+
 .advantages__text {
   max-width: 260px;
   margin: 0 auto;
-  margin-bottom: 42px;
+  margin-bottom: 25px;
 
   font-size: 14px;
   line-height: 26px;
 }
 
 .advantages__list {
+  position: relative;
   display: flex;
   flex-direction: column;
 
@@ -16,6 +21,20 @@
   @include clearlist();
 
   counter-reset: section;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 320px;
+    height: 16px;
+    margin-left: -160px;
+    content: "";
+
+    background-image: url("../img/bg-triangle.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
 }
 
 .advantages__item {
@@ -27,6 +46,10 @@
 
     border-top: 1px solid #d6d6d6;
     border-bottom: 1px solid #d6d6d6;
+  }
+
+  &:first-child {
+    padding-top: 57px;
   }
 
   /* Элемент списка с фото */
@@ -87,6 +110,10 @@
 }
 
 @media (min-width: 768px) {
+  .advantages {
+    margin-bottom: 56px;
+  }
+
   .advantages__text {
     max-width: 636px;
     margin-bottom: 49px;
@@ -96,15 +123,23 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+
+    &::after {
+      display: none;
+    }
   }
 
   .advantages__item {
     width: 256px;
     margin: 0;
-    padding-top: 40px;
+    padding-top: 44px;
+
+    &:first-child {
+      padding-top: 0;
+    }
 
     &:nth-child(4) {
-      padding-top: 40px;
+      padding-top: 44px;
       border: none;
     }
 
@@ -133,7 +168,7 @@
   .advantages__title {
     max-width: 151px;
     margin: 0 auto;
-    margin-bottom: 54px;
+    margin-bottom: 53px;
 
     font-size: 21px;
     line-height: 26px;
@@ -147,22 +182,18 @@
       top: -43px;
     }
   }
+
+  .advantages__img {
+    height: 256px;
+  }
 }
 
 @media (min-width: 1200px) {
-  .advantages__text {
-    margin-bottom: 51px;
-  }
-
   .advantages__item {
     width: 400px;
 
     &--photo {
       width: 100%;
-    }
-
-    &--photo .advantages__title {
-      margin-bottom: 54px;
     }
 
     &--photo .advantages__description {
@@ -177,7 +208,7 @@
   .advantages__item-wrapper {
     width: 400px;
     margin: 0;
-    padding-top: 50px;
+    padding-top: 52px;
   }
 
   .advantages__description {

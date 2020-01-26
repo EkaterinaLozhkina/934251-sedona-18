@@ -85,9 +85,10 @@
 @media (min-width: 768px) {
   .features__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     max-width: 768px;
-    padding-top: 155px;
+    padding-top: 159px;
     padding-bottom: 62px;
 
     text-align: center;
@@ -116,7 +117,7 @@
     /* Иконка бургера */
 
     &--burger::before {
-      top: -97px;
+      top: -96px;
       left: 50%;
       width: 76px;
       height: 69px;
@@ -153,8 +154,7 @@
 @media (min-width: 1200px) {
   .features__list {
     max-width: 1200px;
-    padding-top: 154px;
-    padding-bottom: 82px;
+    padding-bottom: 83px;
   }
 
   .features__item {

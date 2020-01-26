@@ -1,18 +1,19 @@
-.copyright__text {
-  margin-right: 43px;
+.copyright__link {
+  position: relative;
+  padding-right: 41px;
+  margin-bottom: 4px;
 
   font-size: 14px;
   line-height: 26px;
-  font-weight: normal;
-}
 
-.copyright__link {
-  position: relative;
+  color: inherit;
+
+  text-decoration: none;
 
   &::after {
     position: absolute;
-    top: -5px;
-    left: -29px;
+    top: -6px;
+    right: 0;
     width: 27px;
     height: 34px;
     content: "";
@@ -25,11 +26,18 @@
   .copyright {
     display: flex;
     width: 130px;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
   }
 
   .copyright__link::after {
-    top: -16px;
+    top: -2px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .copyright__link {
+    margin-bottom: 2px;
   }
 }

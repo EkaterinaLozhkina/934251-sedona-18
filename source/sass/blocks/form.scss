@@ -1,23 +1,109 @@
 .form {
+  display: flex;
+  flex-wrap: wrap;
   max-width: 320px;
   margin: 0 auto;
-  padding: 0 20px;
+  margin-top: -10px;
+  margin-bottom: 71px;
 }
 
 .form__block {
+  width: 100%;
   margin: 0;
-  margin-bottom: 30px;
-  padding: 0;
-  padding-top: 20px;
+  margin-bottom: 16px;
+  padding: 0 20px;
+  padding-top: 17px;
 
   text-align: left;
 
   border: none;
+  border-top: solid #e5e5e5 1px;
+
+  &--name {
+    order: -1;
+  }
+
+  &--name .form__input {
+    width: 100px;
+    margin-left: 14px;
+    flex-grow: 1;
+  }
+
+  &--contacts {
+    margin-bottom: 18px;
+
+    order: -1;
+  }
+
+  &--contacts .form__title {
+    margin-bottom: 22px;
+  }
+
+  &--contacts .form__label {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 22px;
+    margin-bottom: 9px;
+
+    &::after {
+      position: absolute;
+      top: 34px;
+      right: 0;
+      width: 58px;
+      height: 57px;
+      content: "";
+
+      background-color: #e6e6e6;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &--phone::after {
+      background-image: url("../img/icon-phone.svg");
+    }
+
+    &--email::after {
+      background-image: url("../img/icon-mail.svg");
+    }
+  }
+
+  &--contacts .form__input {
+    width: 280px;
+    margin-top: 8px;
+    margin-left: -22px;
+    margin-bottom: 2px;
+  }
+
+  &--opinion {
+    margin-bottom: 43px;
+  }
+
+  &--opinion .form__title {
+    margin-bottom: 38px;
+  }
+
+  &--places {
+    margin-bottom: 42px;
+    padding-top: 18px;
+  }
+
+  &--places .form__title {
+    margin-bottom: 33px;
+  }
+
+  &--places .form__label {
+    margin-bottom: 54px;
+  }
+
+  &--comment {
+    margin-bottom: 36px;
+  }
 }
 
 .form__title {
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 
   font-size: 18px;
   line-height: 26px;
@@ -28,50 +114,57 @@
 
 .form__label {
   display: flex;
-  align-items: baseline;
+  align-items: center;
 
   font-size: 14px;
   line-height: 26px;
-}
 
-.form__block--contacts .form__label {
-  margin-left: 22px;
-}
-
-.form__controls .form__label {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: bold;
-
-  text-transform: none;
+  &--checkbox {
+    padding-left: 79px;
+  }
 }
 
 .form__input {
-  margin: 14px 0;
-  padding: 17px;
+  margin: 10px 0;
+  padding: 16px 0;
+  padding-left: 20px;
 
+  font-family: inherit;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
 
   background-color: #f2f2f2;
   border: none;
-}
 
-.form__block--name .form__input {
-  width: 100px;
-  margin-left: 10px;
-  flex-grow: 1;
-}
+  &--text {
+    width: 100%;
+    height: 160px;
+    margin-top: 7px;
+    padding: 15px 20px;
+  }
 
-.form__controls .form__input {
-  margin-right: 23px;
-}
+  &::placeholder {
+    color: #000000;
+    opacity: 1;
+  }
 
-.form__input--text {
-  width: 100%;
-  height: 160px;
-  padding: 15px 20px;
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active,
+  &:focus {
+    background-color: #ffffff;
+
+    box-shadow: inset 0 0 0 4px #e5e5e5;
+
+    outline: none;
+  }
+
+  &:focus::placeholder {
+    opacity: 0;
+  }
 }
 
 .form__button {
@@ -79,6 +172,7 @@
   margin: 0 auto;
   padding: 16px 0;
 
+  font-family: inherit;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -98,64 +192,146 @@
 
 @media (min-width: 768px) {
   .form {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     max-width: 648px;
-    padding: 0;
+    margin-bottom: 97px;
   }
 
   .form__block {
     width: 100%;
-  }
+    margin-bottom: 44px;
+    padding-top: 15px;
+    padding-left: 0;
+    padding-right: 0;
 
-  .form__block:nth-child(1),
-  .form__block:nth-child(3) {
-    width: 324px;
-  }
+    border-top: none;
 
-  .form__block:nth-child(3) {
-    order: -1;
-  }
+    &--name {
+      width: 324px;
+      padding-left: 58px;
 
-  .form__block--name {
-    padding-left: 58px;
-  }
+      order: 0;
+    }
 
-  .form__block--contacts .form__input {
-    width: 100%;
+    &--contacts {
+      margin-bottom: 14px;
+
+      order: 0;
+    }
+
+    &--contacts .form__title {
+      margin-bottom: 25px;
+    }
+
+    &--contacts .form__label {
+      margin-bottom: 21px;
+    }
+
+    &--contacts .form__input {
+      width: 100%;
+    }
+
+    &--opinion {
+      position: relative;
+      width: 324px;
+
+      &::after {
+        position: absolute;
+        top: 21px;
+        right: 0;
+        width: 1px;
+        height: 292px;
+        content: "";
+
+        background-color: #dbdbdb;
+      }
+    }
+
+    &--opinion .form__title {
+      margin-bottom: 74px;
+    }
+
+    &--places {
+      margin-bottom: 5px;
+    }
+
+    &--places .form__title {
+      margin-bottom: 58px;
+    }
+
+    &--places .form__wrapper {
+      display: flex;
+      width: 456px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &--places .form__label {
+      width: 199px;
+      margin-bottom: 63px;
+
+      &:last-child {
+        margin-bottom: 63px;
+      }
+    }
+
+    &--comment .form__title {
+      margin-bottom: 58px;
+    }
+
+    &:nth-child(n+3) .form__title::before {
+      position: absolute;
+      top: 50%;
+      left: -182px;
+      width: 125px;
+      height: 1px;
+      content: "";
+
+      background-color: #dbdbdb;
+    }
+
+    &:nth-child(n+3) .form__title::after {
+      position: absolute;
+      top: 50%;
+      right: -182px;
+      width: 125px;
+      height: 1px;
+      content: "";
+
+      background-color: #dbdbdb;
+    }
   }
 
   .form__title {
-    max-width: 280px;
+    position: relative;
+    max-width: 285px;
+
+    margin-bottom: 49px;
+
+    font-size: 21px;
+
+    &--left {
+      margin-left: 0;
+      text-align: left;
+    }
   }
 
-  .form__title--left {
-    margin-left: 0;
-    text-align: left;
+  .form__input--text {
+    margin-top: 0;
+    padding: 16px 22px;
   }
 
   .form__button {
     width: 324px;
     margin: 0;
+    padding-top: 14px;
+    padding-bottom: 18px;
   }
 
   .form__legend {
-    display: inline;
-  }
-
-  .form__wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .form__block:nth-child(4) .form__wrapper {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .form__block:nth-child(4) .form__label {
-    width: 324px;
+    display: block;
+    margin-top: 13px;
   }
 }
 
@@ -163,34 +339,95 @@
 @media (min-width: 1200px) {
   .form {
     max-width: 960px;
+    margin-top: -13px;
+    margin-bottom: 102px;
   }
 
-  .form__block:nth-child(1),
-  .form__block:nth-child(3) {
-    width: 400px;
-  }
+  .form__block {
+    margin-bottom: 58px;
+    padding-top: 0;
 
-  .form__block--name {
-    padding-left: 0;
-  }
+    &--name {
+      width: 400px;
+      padding-left: 0;
+    }
 
-  .form__block:nth-child(3) .form__title--left {
-    margin-left: auto;
-    text-align: center;
-  }
+    &--contacts {
+      margin-bottom: 30px;
+    }
 
-  .form__block:nth-child(2n) .form__wrapper {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
-  }
+    &--contacts .form__title {
+      margin-bottom: 67px;
+    }
 
-  .form__block:nth-child(4) .form__label {
-    width: auto;
-  }
+    &--contacts .form__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
 
-  .form__block--contacts .form__input {
-    width: 317px;
+    &--contacts .form__label {
+      width: 480px;
+      margin-left: 0;
+      justify-content: space-between;
+      align-items: baseline;
+
+      &--phone {
+        width: 400px;
+      }
+
+      &::after {
+        top: 8px;
+      }
+    }
+
+    &--contacts .form__input {
+      width: 315px;
+      margin-left: 0;
+    }
+
+    &--opinion::after {
+      top: 6px;
+      right: -121px;
+    }
+
+    &--opinion .form__title--left {
+      width: 400px;
+      margin-left: 75px;
+
+      text-align: center;
+    }
+
+    &--places {
+      margin-bottom: 18px;
+    }
+
+    &--places .form__wrapper {
+      width: 100%;
+    }
+
+    &--places .form__label {
+      width: auto;
+      margin-right: 66px;
+
+      &:last-child {
+        margin-right: 2px;
+      }
+    }
+
+    &--comment {
+      margin-bottom: 43px;
+    }
+
+    &:nth-child(n+3) .form__title::before {
+      left: -338px;
+      width: 280px;
+    }
+
+    &:nth-child(n+3) .form__title::after {
+      right: -338px;
+      width: 280px;
+    }
   }
 
   .form__button {

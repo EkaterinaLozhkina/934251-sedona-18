@@ -57,7 +57,7 @@
     width: 230px;
 
     &:nth-child(2) {
-      margin-right: 156px;
+      margin-right: 158px;
     }
   }
 
@@ -81,6 +81,8 @@
       background-color: transparent;
     }
 
+    /* Состояния для текущей страницы */
+
     &--active {
       color: #766357;
 
@@ -99,5 +101,10 @@
 @media (min-width: 1200px) {
   .site-list__item:nth-child(2) {
     margin-right: 246px;
+  }
+
+  .site-list__link {
+    padding-top: 14px;
+    padding-bottom: 16px;
   }
 }

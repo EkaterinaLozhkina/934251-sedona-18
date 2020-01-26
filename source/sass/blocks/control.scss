@@ -1,0 +1,101 @@
+.control {
+  position: relative;
+  margin-bottom: 43px;
+  padding-left: 77px;
+
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+
+  text-transform: none;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:hover .control__item + .control__icon,
+  &:focus .control__item + .control__icon {
+    background-color: #e5e5e5;
+
+    outline: none;
+  }
+
+  &:active .control__item + .control__icon {
+    background-color: #d5d5d5;
+
+    &::before {
+      opacity: 0.3;
+    }
+  }
+}
+
+.control__item {
+  margin: 0;
+  margin-right: 66px;
+
+  &:checked + .control__icon--checkbox::before {
+    background-image: url("../img/icon-tick.svg");
+  }
+
+  &:checked + .control__icon--radio::before {
+    background-color: #333333;
+  }
+}
+
+.control__icon {
+  position: absolute;
+  margin-left: -77px;
+  padding: 28px;
+
+  background-color: #f2f2f2;
+  border-radius: 5px;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 23px;
+    height: 16px;
+    margin-top: -7px;
+    margin-left: -11px;
+    content: "";
+
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--radio {
+    margin-left: -76px;
+
+    border-radius: 50%;
+
+    &::before {
+      width: 20px;
+      height: 20px;
+      margin-top: -10px;
+      margin-left: -10px;
+
+      border-radius: 50%;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .control {
+    margin-bottom: 53px;
+  }
+
+  .control__item {
+    margin-right: 63px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .control {
+    padding-left: 81px;
+  }
+
+  .control__icon--checkbox {
+    margin-left: -81px;
+  }
+}
