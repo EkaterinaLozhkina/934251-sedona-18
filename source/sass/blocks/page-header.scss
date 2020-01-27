@@ -50,6 +50,10 @@
   background-position: center;
   background-size: auto 100%;
 
+  @media (min-resolution: 1.5dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
+
   /* Текст на фоне на главной странице */
 
   &::before {
@@ -132,6 +136,10 @@
 
     background-image: url("../img/bg-back-tablet@1x.jpg");
 
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
+
     /* Текст на фоне на главной странице */
 
     &::before {
@@ -182,6 +190,10 @@
 @media (min-width: 1200px) {
   .page-header__bg {
     background-image: url("../img/bg-back-desktop@1x.jpg");
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
 
     /* Текст на фоне на главной странице */
 
