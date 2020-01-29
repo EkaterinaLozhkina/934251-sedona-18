@@ -118,7 +118,7 @@
   }
 
   .photo-gallery__img {
-    height: 267px; /* временно */
+    height: 267px;
     margin-bottom: 0;
   }
 
@@ -168,6 +168,14 @@
 
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .photo-gallery__img-like {
+    opacity: 1;
+  }
+
+  .photo-gallery__img-like path {
+    fill: #ffffff;
   }
 
   .photo-gallery__num-like {
