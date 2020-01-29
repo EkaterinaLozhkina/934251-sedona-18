@@ -10,16 +10,20 @@
 
   text-decoration: none;
 
-  &::after {
-    position: absolute;
-    top: -6px;
-    right: 0;
-    width: 27px;
-    height: 34px;
-    content: "";
-
-    background-image: url("../img/logo-htmlacademy.svg");
+  &:hover .copyright__icon,
+  &:focus .copyright__icon {
+    fill: #81b3d2;
   }
+
+  &:active .copyright__icon {
+    fill: #b2b2b2;
+  }
+}
+
+.copyright__icon {
+  position: absolute;
+  top: -6px;
+  right: 0;
 }
 
 @media (min-width: 768px) {
@@ -31,7 +35,7 @@
     align-items: center;
   }
 
-  .copyright__link::after {
+  .copyright__icon {
     top: -2px;
   }
 }
