@@ -59,62 +59,38 @@
 }
 
 .player__button {
-  position: relative;
-  display: block;
   width: 32px;
   height: 20px;
 
+  padding: 0;
+
   background: none;
   border: none;
-
-  &:hover,
-  &:focus {
-    outline: none;
-  }
-
-  &:active::before {
-    opacity: 0.3;
-  }
-
-  /* Иконки на панели управления видео */
-
-  &::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 32px;
-    height: 20px;
-    content: "";
-
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  &--replay {
-    margin-right: auto;
-
-    &::before {
-      background-image: url("../img/icon-video-replay.svg");
-    }
-  }
+  outline: none;
 
   &--subtitle {
-    margin-right: 25px;
-
-    &::before {
-      background-image: url("../img/icon-video-subtitles.svg");
-    }
+    margin-left: auto;
+    margin-right: 26px;
   }
 
-  &--fullscreen::before {
-    background-image: url("../img/icon-video-fullscreen.svg");
+  &:hover .player__icon,
+  &:focus .player__icon {
+    fill: #000000;
   }
+
+  &:active .player__icon {
+    fill: #b8b8b8;
+  }
+}
+
+.player__icon {
+  fill: #5c6870;
 }
 
 @media (min-width: 768px) {
   .player {
     width: 648px;
-    height: 499px;
+    height: 500px;
 
     background-image: url("../img/video-tablet@1x.jpg");
 
@@ -128,7 +104,8 @@
     width: 100%;
     margin: 0;
     margin-top: -93px;
-    padding: 36px 0;
+    padding-top: 36px;
+    padding-bottom: 37px;
 
     background-color: rgba(#000000, 0.6);
   }
@@ -151,9 +128,19 @@
     padding-right: 35px;
   }
 
-  .player__button:hover,
-  .player__button:focus {
+  .player__button:hover .player__icon,
+  .player__button:focus .player__icon {
+    fill: #ffffff;
     opacity: 0.6;
+  }
+
+  .player__button:active .player__icon {
+    fill: #ffffff;
+    opacity: 0.3;
+  }
+
+  .player__icon {
+    fill: #ffffff;
   }
 }
 
