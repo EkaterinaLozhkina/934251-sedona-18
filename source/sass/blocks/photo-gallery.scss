@@ -71,6 +71,7 @@
   height: 20px;
 
   border: none;
+  fill: #000000;
   opacity: 0.3;
 }
 
@@ -171,11 +172,8 @@
   }
 
   .photo-gallery__img-like {
-    opacity: 1;
-  }
-
-  .photo-gallery__img-like path {
     fill: #ffffff;
+    opacity: 1;
   }
 
   .photo-gallery__num-like {
